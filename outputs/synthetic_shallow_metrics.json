@@ -1,0 +1,8 @@
+{
+  "accuracy": 1.0,
+  "loss": 0.0,
+  "macro_f1": 1.0,
+  "num_examples": 1,
+  "macro_f1": 1.0,
+  "vocab_size": 18
+}

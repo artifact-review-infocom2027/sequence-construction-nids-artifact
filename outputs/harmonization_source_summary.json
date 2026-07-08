@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "sources_used": [
+    "dataset preparation notebook",
+    "public feature table",
+    "project schema summaries"
+  ],
+  "source_feature_mapping_rows": 81,
+  "feature_rows": 47,
+  "label_rule_rows": 27,
+  "notes": [
+    "The notebook was used as evidence for public mapping rules but is not packaged.",
+    "The public reference script is designed for evaluator-supplied tabular inputs."
+  ]
+}

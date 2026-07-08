@@ -1,0 +1,63 @@
+paper_source_map:
+  figure_1:
+    paper_pdf: figures/paper/fig01_pipeline.pdf
+    preview_png: figures/paper/fig01_pipeline.png
+  figure_2:
+    paper_pdf: figures/paper/fig02_temporalization.pdf
+    preview_png: figures/paper/fig02_temporalization.png
+    evidence_csv: evidence/locked_sources/temporalization/temporalization_values.csv
+  figure_3:
+    paper_pdf: figures/paper/fig03_capacity_heatmap.pdf
+    preview_png: figures/paper/fig03_capacity_heatmap.png
+    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+  figure_4:
+    paper_pdf: figures/paper/fig04_head_ablation.pdf
+    preview_png: figures/paper/fig04_head_ablation.png
+    evidence_csv: evidence/locked_sources/head_ablation/head_ablation_meanstd.csv
+  figure_5:
+    paper_pdf: figures/paper/fig05_shallow_vs_llm.pdf
+    preview_png: figures/paper/fig05_shallow_vs_llm.png
+    evidence_csv: evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv
+  figure_6:
+    paper_pdf: figures/paper/fig06_context_efficiency.pdf
+    preview_png: figures/paper/fig06_context_efficiency.png
+    evidence_csv: evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv
+  figure_7:
+    paper_pdf: figures/paper/fig07_efficiency_frontier.pdf
+    preview_png: figures/paper/fig07_efficiency_frontier.png
+    evidence_csv: evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv
+  figure_8:
+    paper_pdf: figures/paper/fig08_per_dataset_validation.pdf
+    preview_png: figures/paper/fig08_per_dataset_validation.png
+    evidence_csv: evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv
+  figure_9:
+    paper_pdf: figures/paper/fig09_modernbert_context.pdf
+    preview_png: figures/paper/fig09_modernbert_context.png
+    evidence_csv: evidence/locked_sources/context_length/modernbert_context_ablation.csv
+  figure_10:
+    paper_pdf: figures/paper/fig10_pretraining.pdf
+    preview_png: figures/paper/fig10_pretraining.png
+    evidence_csv: evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv
+  figure_11:
+    paper_pdf: figures/paper/fig11_encoder_decoder.pdf
+    preview_png: figures/paper/fig11_encoder_decoder.png
+    evidence_csv: evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv
+  feature_mapping:
+    specification_csv: docs/feature_specification.csv
+    specification_md: docs/feature_specification.md
+    source_mapping_csv: docs/source_feature_mapping.csv
+    excluded_fields_csv: docs/excluded_identifier_fields.csv
+  schema_harmonization:
+    documentation: docs/schema_harmonization.md
+    reference_script: scripts/data_preparation/harmonize_schema.py
+    self_test_output: outputs/harmonize_schema_self_test.json
+    source_summary: outputs/harmonization_source_summary.json
+  label_harmonization:
+    mapping_csv: docs/label_harmonization.csv
+    documentation: docs/label_harmonization.md
+  table_i:
+    evidence_csv: evidence/locked_sources/representation/representation_ablation.csv
+  table_ii:
+    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+  deployment:
+    evidence_csv: evidence/deployment/posthoc_deployment_full_benchmark_summary.csv

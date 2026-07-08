@@ -1,0 +1,34 @@
+task:
+  family: shallow_serialized_text
+  scenario: shallow serialized session-coherent transformer
+requires_raw_data_not_included: true
+seed: 0
+paths:
+  train: "<DATA_NOT_INCLUDED>/train_windows"
+  val: "<DATA_NOT_INCLUDED>/val_windows"
+  test: "<DATA_NOT_INCLUDED>/test_windows"
+  output_dir: outputs/shallow_session_smoke
+representation:
+  name: serialized_text
+temporalization:
+  name: session_coherent
+window:
+  window_len: 32
+  stride: 16
+model:
+  d_model: 256
+  layers: 2
+  heads: 4
+  ff_dim: 1024
+  pool: mean
+  max_tokens: 512
+  dropout: 0.1
+optimizer:
+  epochs: 20
+  batch_size: 256
+  lr: 0.001
+metrics:
+  primary: macro_f1
+throughput:
+  convention: processed_flow_records_per_sec
+report_to: none

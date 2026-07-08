@@ -1,0 +1,96 @@
+command,returncode,status,stdout_tail,stderr_tail
+python scripts/data_preparation/verify_feature_and_label_mappings.py,0,PASS,"resent"": true,
+    ""label_scopes_clean"": true,
+    ""symm_ips_ports_model_input_false"": true,
+    ""harmonization_self_test_passed"": true,
+    ""self_test_duplicate_columns_absent"": true,
+    ""self_test_cicids_directional_pkt_mean_preferred"": true,
+    ""self_test_unsw_attack_cat_preferred"": true,
+    ""self_test_mqcids_service_coalesced"": true
+  },
+  ""self_test_stdout"": ""{\n  \""status\"": \""PASS\"",\n  \""checks\"": {\n    \""duplicate_columns_absent\"": true,\n    \""cicids_directional_pkt_mean_preferred\"": true,\n    \""cicids_packet_counts_from_counts\"": true,\n    \""cicids_packet_counts_not_rates\"": true,\n    \""cicids_labels_mapped\"": true,\n    \""unsw_attack_cat_preferred\"": true,\n    \""unsw_identifiers_dropped\"": true,\n    \""mqcids_service_coalesced\"": true,\n    \""mqcids_labels_mapped\"": true,\n    \""mqcids_identifiers_dropped\"": true,\n    \""model_columns_plus_label\"": true\n  },\n  \""case_rows\"": {\n    \""cicids\"": 4,\n    \""unsw\"": 3,\n    \""mqcids\"": 2\n  },\n  \""columns\"": 47\n}""
+}
+",
+python scripts/data_preparation/harmonize_schema.py --self-test,0,PASS,"{
+  ""status"": ""PASS"",
+  ""checks"": {
+    ""duplicate_columns_absent"": true,
+    ""cicids_directional_pkt_mean_preferred"": true,
+    ""cicids_packet_counts_from_counts"": true,
+    ""cicids_packet_counts_not_rates"": true,
+    ""cicids_labels_mapped"": true,
+    ""unsw_attack_cat_preferred"": true,
+    ""unsw_identifiers_dropped"": true,
+    ""mqcids_service_coalesced"": true,
+    ""mqcids_labels_mapped"": true,
+    ""mqcids_identifiers_dropped"": true,
+    ""model_columns_plus_label"": true
+  },
+  ""case_rows"": {
+    ""cicids"": 4,
+    ""unsw"": 3,
+    ""mqcids"": 2
+  },
+  ""columns"": 47
+}
+",
+python scripts/verification/verify_remaining_locked_sources.py,0,PASS,"{
+  ""status"": ""PASS"",
+  ""checked_files"": 10,
+  ""absent_files"": 0
+}
+",
+python scripts/deployment_benchmark/benchmark_inference_deployment.py,0,PASS,"{
+  ""status"": ""summary_only"",
+  ""source"": ""evidence/deployment/posthoc_deployment_full_benchmark_summary.csv"",
+  ""rows"": 7
+}
+",
+python scripts/train.py --config configs/shallow_session.yaml --dry-run,0,PASS,"{
+  ""family"": ""shallow_serialized_text"",
+  ""message"": ""Config is valid. Real paper-scale training requires external data not included here."",
+  ""model"": {
+    ""d_model"": 256,
+    ""dropout"": 0.1,
+    ""ff_dim"": 1024,
+    ""heads"": 4,
+    ""layers"": 2,
+    ""max_tokens"": 512,
+    ""pool"": ""mean""
+  },
+  ""requires_raw_data_not_included"": true,
+  ""status"": ""dry_run"",
+  ""window"": {
+    ""stride"": 16,
+    ""window_len"": 32
+  }
+}
+",
+python scripts/train.py --config configs/llm_modernbert_512.yaml --dry-run,0,PASS,"{
+  ""base_model"": ""answerdotai/ModernBERT-base"",
+  ""family"": ""llm_window_cls"",
+  ""head"": ""last_token"",
+  ""max_len"": 512,
+  ""note"": ""Dry run only. Real training requires external data and model assets."",
+  ""requires"": [
+    ""model/tokenizer assets for answerdotai/ModernBERT-base"",
+    ""train/validation/test JSONL windows with text and label fields""
+  ]
+}
+",
+python scripts/build_windows.py --config configs/build_windows_session.yaml --dry-run,0,PASS,"Raw input data is not included in this anonymous artifact.
+{
+  ""columns"": {
+    ""label_col"": ""label"",
+    ""session_col"": ""session_id"",
+    ""timestamp_col"": ""timestamp""
+  },
+  ""label_rule"": ""priority"",
+  ""message"": ""Window construction recipe validated. No private data was read."",
+  ""status"": ""dry_run"",
+  ""window"": {
+    ""stride"": 16,
+    ""window_len"": 32
+  }
+}
+",

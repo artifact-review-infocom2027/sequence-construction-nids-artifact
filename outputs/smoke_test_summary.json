@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "backward_update": true,
+    "config_validation": true,
+    "forward_shape": true,
+    "metrics": true,
+    "priority_label": true,
+    "serialization": true,
+    "synthetic_train": true,
+    "window_count": true
+  },
+  "status": "ok",
+  "synthetic_metrics": {
+    "accuracy": 1.0,
+    "loss": 0.0,
+    "macro_f1": 1.0,
+    "num_examples": 1,
+    "macro_f1": 1.0,
+    "vocab_size": 18
+  }
+}

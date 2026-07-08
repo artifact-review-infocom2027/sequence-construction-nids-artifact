@@ -1,0 +1,82 @@
+source_dataset,native_field_or_pattern,canonical_feature,transform,availability,model_input,notes
+CICIDS2018,Flow Duration,duration,microseconds_to_seconds; clamp_negative_to_zero,available,true,Column names are stripped; repeated header rows are removed; pre-2018 timestamp anomalies are filtered.
+CICIDS2018,Tot Fwd Pkts + Tot Bwd Pkts,flow_pkts_total,sum_forward_reverse_packets,available,true,Derived from confirmed forward and backward packet-count columns.
+CICIDS2018,TotLen Fwd Pkts + TotLen Bwd Pkts,flow_bytes_total,sum_forward_reverse_bytes,available,true,Derived from confirmed forward and backward byte-count columns.
+CICIDS2018,Timestamp + Src IP + Dst IP + Src Port + Dst Port + Protocol,temporal_persistence,delta_seconds_within_repeated_communication_pattern,available,true,Uses ordering fields only; identifiers are not model inputs.
+CICIDS2018,Tot Fwd Pkts + Tot Bwd Pkts + Flow Duration,burst_rate,flow_pkts_total / (duration + 1e-6),available,true,Derived public rate feature.
+CICIDS2018,TotLen Fwd Pkts + TotLen Bwd Pkts,bdr,"max(fwd_bytes,bwd_bytes) / (min(fwd_bytes,bwd_bytes) + 1e-6)",available,true,Derived byte-direction ratio.
+CICIDS2018,Dst Port,port_rarity,inverse_frequency(destination_port),available,true,Computed within the supplied table.
+CICIDS2018,<unavailable>,entropy_bucket,missing_sentinel,missing_sentinel,true,Filled with the public categorical sentinel when entropy is not supplied.
+CICIDS2018,Protocol,protocol,direct,available,true,Confirmed notebook mapping.
+CICIDS2018,Pkt Len Mean,src_pkt_mean,fallback_shared_packet_length_mean,available,true,Used only as fallback when directional packet-length means are unavailable.
+CICIDS2018,Fwd Pkt Len Mean,src_pkt_mean,direct,available,true,Confirmed forward packet-length mean.
+CICIDS2018,Bwd Pkt Len Mean,dst_pkt_mean,direct,available,true,Confirmed backward packet-length mean.
+CICIDS2018,Flow IAT Mean,src_intpkt,direct_or_shared_interval,available,true,Confirmed inter-arrival-time statistic.
+CICIDS2018,Flow IAT Std,dst_intpkt,direct_or_shared_interval,available,true,Confirmed inter-arrival-time statistic.
+CICIDS2018,Active Mean,tcp_trans_depth,direct_or_activity_proxy,available,true,Confirmed active-period statistic used as a numeric flow-dynamics signal.
+CICIDS2018,Active Std,tcp_resp_bytes,direct_or_activity_proxy,available,true,Confirmed active-period statistic used as a numeric flow-dynamics signal.
+CICIDS2018,Idle Mean,src_jitter,direct_or_idle_proxy,available,true,Confirmed idle-period statistic used as a numeric timing signal.
+CICIDS2018,Idle Std,dst_jitter,direct_or_idle_proxy,available,true,Confirmed idle-period statistic used as a numeric timing signal.
+UNSW-NB15,dur,duration,direct_seconds,available,true,Confirmed notebook mapping.
+UNSW-NB15,spkts + dpkts,flow_pkts_total,sum_forward_reverse_packets,available,true,Confirmed notebook mapping from source and destination packet counts.
+UNSW-NB15,sbytes + dbytes,flow_bytes_total,sum_forward_reverse_bytes,available,true,Confirmed notebook mapping from source and destination bytes.
+UNSW-NB15,Stime + srcip + dstip + sport + dsport + proto,temporal_persistence,delta_seconds_within_repeated_communication_pattern,available,true,UNIX timestamp is parsed to event time; identifiers are not model inputs.
+UNSW-NB15,spkts + dpkts + dur,burst_rate,flow_pkts_total / (duration + 1e-6),available,true,Derived from confirmed packet counts and duration.
+UNSW-NB15,sbytes + dbytes,bdr,"max(fwd_bytes,bwd_bytes) / (min(fwd_bytes,bwd_bytes) + 1e-6)",available,true,Derived from confirmed directional bytes.
+UNSW-NB15,dsport,port_rarity,inverse_frequency(destination_port),available,true,Computed within the supplied table.
+UNSW-NB15,proto,protocol,direct,available,true,Confirmed notebook mapping.
+UNSW-NB15,sttl,src_ttl,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dttl,dst_ttl,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,sloss,src_loss,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dloss,dst_loss,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,sload,src_bps,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dload,dst_bps,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,spkts,src_pkts,direct,available,true,Confirmed notebook mapping.
+UNSW-NB15,dpkts,dst_pkts,direct,available,true,Confirmed notebook mapping.
+UNSW-NB15,swin,src_win,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dwin,dst_win,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,stcpb,src_tcp_bytes,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dtcpb,dst_tcp_bytes,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,smean,src_pkt_mean,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dmean,dst_pkt_mean,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,trans_depth,tcp_trans_depth,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,response_body_len,tcp_resp_bytes,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,sjit,src_jitter,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,djit,dst_jitter,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,sintpkt,src_intpkt,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,dintpkt,dst_intpkt,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,tcprtt,tcp_rtt,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,synack,tcp_synack_time,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,ackdat,tcp_ack_time,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,ct_state_ttl,count_same_state_ttl,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,ct_flw_http_mthd,count_http_methods,direct,available,true,Public UNSW flow-statistic field.
+UNSW-NB15,state,conn_state,direct,available,true,Public UNSW connection-state field.
+UNSW-NB15,service,app_service,direct,available,true,Public UNSW service field.
+UNSW-NB15,<unavailable>,entropy_bucket,missing_sentinel,missing_sentinel,true,Filled with the public categorical sentinel when entropy is not supplied.
+MQCIDS,flow.start / timestamp,duration,duration_if_present_else_sentinel,available,true,Pattern-level public flow timing mapping.
+MQCIDS,flow.pkts_toserver + flow.pkts_toclient,flow_pkts_total,sum_forward_reverse_packets,available,true,Pattern-level MQCIDS EVE telemetry mapping.
+MQCIDS,flow.bytes_toserver + flow.bytes_toclient,flow_bytes_total,sum_forward_reverse_bytes,available,true,Pattern-level MQCIDS EVE telemetry mapping.
+MQCIDS,timestamp + src_ip + dest_ip + src_port + dest_port + proto,temporal_persistence,delta_seconds_within_repeated_communication_pattern,available,true,Temporalization key only; identifiers are not model inputs.
+MQCIDS,flow.pkts_toserver + flow.pkts_toclient + duration,burst_rate,flow_pkts_total / (duration + 1e-6),available,true,Derived public rate feature.
+MQCIDS,flow.bytes_toserver + flow.bytes_toclient,bdr,"max(bytes_toserver,bytes_toclient) / (min(bytes_toserver,bytes_toclient) + 1e-6)",available,true,Derived byte-direction ratio.
+MQCIDS,dest_port,port_rarity,inverse_frequency(destination_port),available,true,Computed within the supplied table.
+MQCIDS,proto / protocol,protocol,direct,available,true,Pattern-level protocol mapping.
+MQCIDS,app_proto / app_service,app_service,direct,available,true,"Coalesced with deterministic priority: app_service is preferred, otherwise app_proto."
+MQCIDS,http.hostname / http.host,http_host,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for HTTP host.
+MQCIDS,http.url / http.uri,http_url,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for HTTP URL.
+MQCIDS,http.http_user_agent / http_user_agent,http_ua,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for HTTP user-agent.
+MQCIDS,tls.ja3.hash / tls_ja3,tls_ja3,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for TLS JA3.
+MQCIDS,tls.ja3s.hash / tls_ja3s,tls_ja3s,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for TLS JA3S.
+MQCIDS,tls.sni / tls_sni,tls_sni,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for TLS SNI.
+MQCIDS,dns.rrname / dns.query / dns_name,dns_name,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for DNS name.
+MQCIDS,dns.rrtype / dns.type / dns_type,dns_type,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for DNS type.
+MQCIDS,ssh.client.software / ssh_client_ver,ssh_client_ver,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for SSH client banner.
+MQCIDS,ssh.server.software / ssh_server_ver,ssh_server_ver,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for SSH server banner.
+MQCIDS,flow.state / conn_state,conn_state,direct,available,true,Coalesced MQCIDS EVE telemetry aliases for connection state.
+all,src_ip + dst_ip + src_port + dst_port,symm_ips_ports,canonical_bidirectional_key,temporalization_only,false,Used only for temporalization/control; model_input=false.
+CICIDS2018,Tot Fwd Pkts,src_pkts,direct_count,available,true,Confirmed forward packet-count column; packet-rate columns are not used as counts.
+CICIDS2018,Tot Bwd Pkts,dst_pkts,direct_count,available,true,Confirmed backward packet-count column; packet-rate columns are not used as counts.
+CICIDS2018,TotLen Fwd Pkts,src_tcp_bytes,direct_bytes,available,true,Confirmed forward byte-count column.
+CICIDS2018,TotLen Bwd Pkts,dst_tcp_bytes,direct_bytes,available,true,Confirmed backward byte-count column.
+CICIDS2018,TotLen Fwd Pkts + Flow Duration,src_bps,fwd_bytes / (duration + 1e-6),available,true,Derived from forward bytes and duration when directional rate columns are unavailable.
+CICIDS2018,TotLen Bwd Pkts + Flow Duration,dst_bps,bwd_bytes / (duration + 1e-6),available,true,Derived from backward bytes and duration when directional rate columns are unavailable.

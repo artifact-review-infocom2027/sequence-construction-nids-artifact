@@ -1,0 +1,28 @@
+source_dataset,native_label_or_pattern,harmonized_label,rule_type,notes
+public,benign,benign,final_label_space,Public task label.
+public,botnet_c2,botnet_c2,final_label_space,Public task label.
+public,bruteforce,bruteforce,final_label_space,Public task label.
+public,dos,dos,final_label_space,Public task label.
+public,other_attack,other_attack,final_label_space,Public task label.
+public,scan_recon,scan_recon,final_label_space,Public task label.
+public,web_attack,web_attack,final_label_space,Public task label.
+UNSW,normal|benign,benign,pattern_rule,Deterministic public harmonization rule.
+UNSW,dos,dos,pattern_rule,Deterministic public harmonization rule.
+UNSW,reconnaissance|recon,scan_recon,pattern_rule,Deterministic public harmonization rule.
+UNSW,fuzzers|fuzzer|analysis|backdoor|backdoors|generic|exploits|shellcode|worms,other_attack,pattern_rule,Deterministic public harmonization rule.
+UNSW,web|xss|sql,web_attack,pattern_rule,Deterministic public harmonization rule.
+CICIDS,benign,benign,pattern_rule,Deterministic public harmonization rule.
+CICIDS,bot,botnet_c2,pattern_rule,Deterministic public harmonization rule.
+CICIDS,ddos|dos|hulk|goldeneye|slowloris|slowhttptest|hoic|loic,dos,pattern_rule,Deterministic public harmonization rule.
+CICIDS,ftp-bruteforce|ssh-bruteforce|brute force|bruteforce,bruteforce,pattern_rule,Deterministic public harmonization rule.
+CICIDS,web attack|xss|sql injection|sql_injection|web brute force,web_attack,pattern_rule,Deterministic public harmonization rule.
+CICIDS,infiltration|infilteration,other_attack,pattern_rule,Deterministic public harmonization rule.
+CICIDS,portscan|scan,scan_recon,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,benign|normal,benign,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,scan|recon|attempted-recon,scan_recon,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,brute|ssh brute|credential,bruteforce,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,dos|ddos,dos,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,web|http|sql|xss|rce|traversal|command injection|web-application,web_attack,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,botnet|c2|command and control|trojan|malware,botnet_c2,pattern_rule,Deterministic public harmonization rule.
+MQCIDS,alert|attack,other_attack,pattern_rule,Deterministic public harmonization rule.
+any,otherwise attack-like,other_attack,fallback_rule,Fallback for attack labels outside the named public task families.

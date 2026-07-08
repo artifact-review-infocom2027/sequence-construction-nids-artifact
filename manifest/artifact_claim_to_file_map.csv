@@ -1,0 +1,46 @@
+paper_claim_or_item,artifact_file,evidence_type,status,notes
+Figure 1,figures/paper/fig01_pipeline.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 1 preview,figures/paper/fig01_pipeline.png,PNG preview,included,preview image
+Figure 2,figures/paper/fig02_temporalization.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 2 preview,figures/paper/fig02_temporalization.png,PNG preview,included,preview image
+Figure 2 evidence,evidence/locked_sources/temporalization/temporalization_values.csv,evidence CSV,included,CSV evidence
+Figure 3,figures/paper/fig03_capacity_heatmap.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 3 preview,figures/paper/fig03_capacity_heatmap.png,PNG preview,included,preview image
+Figure 3 evidence,evidence/locked_sources/capacity/capacity_ablation_meanstd.csv,evidence CSV,included,CSV evidence
+Figure 4,figures/paper/fig04_head_ablation.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 4 preview,figures/paper/fig04_head_ablation.png,PNG preview,included,preview image
+Figure 4 evidence,evidence/locked_sources/head_ablation/head_ablation_meanstd.csv,evidence CSV,included,CSV evidence
+Figure 5,figures/paper/fig05_shallow_vs_llm.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 5 preview,figures/paper/fig05_shallow_vs_llm.png,PNG preview,included,preview image
+Figure 5 evidence,evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv,evidence CSV,included,CSV evidence
+Figure 6,figures/paper/fig06_context_efficiency.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 6 preview,figures/paper/fig06_context_efficiency.png,PNG preview,included,preview image
+Figure 6 evidence,evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv,evidence CSV,included,CSV evidence
+Figure 7,figures/paper/fig07_efficiency_frontier.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 7 preview,figures/paper/fig07_efficiency_frontier.png,PNG preview,included,preview image
+Figure 7 evidence,evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv,evidence CSV,included,CSV evidence
+Figure 8,figures/paper/fig08_per_dataset_validation.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 8 preview,figures/paper/fig08_per_dataset_validation.png,PNG preview,included,preview image
+Figure 8 evidence,evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv,evidence CSV,included,CSV evidence
+Figure 9,figures/paper/fig09_modernbert_context.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 9 preview,figures/paper/fig09_modernbert_context.png,PNG preview,included,preview image
+Figure 9 evidence,evidence/locked_sources/context_length/modernbert_context_ablation.csv,evidence CSV,included,CSV evidence
+Figure 10,figures/paper/fig10_pretraining.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 10 preview,figures/paper/fig10_pretraining.png,PNG preview,included,preview image
+Figure 10 evidence,evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv,evidence CSV,included,CSV evidence
+Figure 11,figures/paper/fig11_encoder_decoder.pdf,paper-facing figure PDF,included,paper-facing figure
+Figure 11 preview,figures/paper/fig11_encoder_decoder.png,PNG preview,included,preview image
+Figure 11 evidence,evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv,evidence CSV,included,CSV evidence
+Complete feature mapping,docs/feature_specification.csv,feature mapping CSV,included,public artifact file
+Complete feature mapping notes,docs/feature_specification.md,documentation,included,public artifact file
+Excluded identifier fields,docs/excluded_identifier_fields.csv,identifier exclusion CSV,included,public artifact file
+Schema harmonization rules,docs/schema_harmonization.md,documentation,included,public artifact file
+Label harmonization rules,docs/label_harmonization.csv,label mapping CSV,included,public artifact file
+Label harmonization notes,docs/label_harmonization.md,documentation,included,public artifact file
+Reference harmonization script,scripts/data_preparation/harmonize_schema.py,reference script,included,public artifact file
+Feature and label mapping verifier,scripts/data_preparation/verify_feature_and_label_mappings.py,verification script,included,public artifact file
+Table I representation,evidence/locked_sources/representation/representation_ablation.csv,evidence CSV,included,public artifact file
+Deployment benchmark,evidence/deployment/posthoc_deployment_full_benchmark_summary.csv,evidence CSV,included,public artifact file
+Source-to-canonical feature mapping,docs/source_feature_mapping.csv,feature mapping CSV,included,public artifact file
+Harmonization self-test output,outputs/harmonize_schema_self_test.json,verification output,included,public artifact file
+Harmonization source summary,outputs/harmonization_source_summary.json,verification output,included,public artifact file

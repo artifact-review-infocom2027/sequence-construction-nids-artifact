@@ -1,0 +1,15 @@
+{
+  "causal": false,
+  "d_model": 64,
+  "heads": 2,
+  "layers": 4,
+  "max_tokens": 512,
+  "model_family": "shallow_transformer",
+  "num_labels": 7,
+  "pooling": "mean",
+  "representation": "serialized text",
+  "seed": 0,
+  "stride": 16,
+  "temporalization": "session-coherent",
+  "window_len": 32
+}

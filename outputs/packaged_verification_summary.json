@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "artifact_file": "evidence/locked_sources/representation/representation_ablation.csv",
+      "exists": true,
+      "rows": 3
+    },
+    {
+      "artifact_file": "evidence/locked_sources/temporalization/temporalization_values.csv",
+      "exists": true,
+      "rows": 3
+    },
+    {
+      "artifact_file": "evidence/locked_sources/capacity/capacity_ablation_meanstd.csv",
+      "exists": true,
+      "rows": 27
+    },
+    {
+      "artifact_file": "evidence/locked_sources/head_ablation/head_ablation_meanstd.csv",
+      "exists": true,
+      "rows": 8
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv",
+      "exists": true,
+      "rows": 4
+    },
+    {
+      "artifact_file": "evidence/locked_sources/context_length/llm_context_length_meanstd.csv",
+      "exists": true,
+      "rows": 8
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv",
+      "exists": true,
+      "rows": 5
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv",
+      "exists": true,
+      "rows": 4
+    },
+    {
+      "artifact_file": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "exists": true,
+      "rows": 3
+    },
+    {
+      "artifact_file": "evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv",
+      "exists": true,
+      "rows": 14
+    }
+  ]
+}

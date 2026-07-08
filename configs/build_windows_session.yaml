@@ -1,0 +1,18 @@
+task:
+  family: build_windows
+  scenario: session-coherent window construction recipe
+requires_raw_data_not_included: true
+paths:
+  input_table: "<DATA_NOT_INCLUDED>/harmonized_flow_table"
+  output_dir: outputs/window_recipe
+columns:
+  session_col: session_id
+  timestamp_col: timestamp
+  label_col: label
+label_rule: priority
+window:
+  window_len: 32
+  stride: 16
+representation:
+  name: serialized_text
+report_to: none

@@ -1,0 +1,25 @@
+task:
+  family: llm_window_cls
+  scenario: Qwen2.5 0.5B 512-token window classifier
+requires_raw_data_not_included: true
+requires_model_assets: true
+seed: 0
+paths:
+  train: "<DATA_NOT_INCLUDED>/train_windows"
+  val: "<DATA_NOT_INCLUDED>/val_windows"
+  test: "<DATA_NOT_INCLUDED>/test_windows"
+  output_dir: outputs/llm_qwen_512
+model:
+  base_model: Qwen/Qwen2.5-0.5B
+  head: last_token
+  max_len: 512
+  num_labels: 7
+  trust_remote_code: false
+optimizer:
+  epochs: 1
+  batch_size: 8
+  grad_accum: 1
+  lr: 0.00002
+  weight_decay: 0.01
+report_to: none
+window_tokens: ["[FSEP]", "[LAST]"]

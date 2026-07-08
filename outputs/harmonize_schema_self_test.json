@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": {
+    "duplicate_columns_absent": true,
+    "cicids_directional_pkt_mean_preferred": true,
+    "cicids_packet_counts_from_counts": true,
+    "cicids_packet_counts_not_rates": true,
+    "cicids_labels_mapped": true,
+    "unsw_attack_cat_preferred": true,
+    "unsw_identifiers_dropped": true,
+    "mqcids_service_coalesced": true,
+    "mqcids_labels_mapped": true,
+    "mqcids_identifiers_dropped": true,
+    "model_columns_plus_label": true
+  },
+  "case_rows": {
+    "cicids": 4,
+    "unsw": 3,
+    "mqcids": 2
+  },
+  "columns": 47
+}

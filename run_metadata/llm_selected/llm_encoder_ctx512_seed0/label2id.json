@@ -1,0 +1,9 @@
+{
+  "benign": 0,
+  "botnet_c2": 1,
+  "bruteforce": 2,
+  "dos": 3,
+  "other_attack": 4,
+  "scan_recon": 5,
+  "web_attack": 6
+}

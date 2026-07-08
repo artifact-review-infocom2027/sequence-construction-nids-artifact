@@ -1,0 +1,15 @@
+{
+  "paper_figures_present": true,
+  "png_previews_present": true,
+  "evidence_files_present": true,
+  "feature_mappings_present": true,
+  "label_harmonization_present": true,
+  "schema_harmonization_present": true,
+  "paper_figures_only": true,
+  "script_checks_passed": true,
+  "ready_for_github": true,
+  "file_count": 137,
+  "source_feature_mapping_present": true,
+  "harmonization_self_test_passed": true,
+  "verification_scripts_present": true
+}

@@ -1,0 +1,208 @@
+public_result_id,evidence_type,setting,metric,mean,std,n,source_table,component,notes
+robustness_sensitivity_001,repeated_seed,capacity d=64 L=1 H=2,present_f1,0.853813854998,0.135458174618,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_002,repeated_seed,capacity d=64 L=1 H=2,pr_auc,0.855560737834,0.142247684734,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_003,repeated_seed,capacity d=64 L=1 H=2,accuracy,0.994856887299,0.00102472622875,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_004,repeated_seed,capacity d=64 L=1 H=2,throughput_flows_per_sec,1394862.90725,3865.98501548,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_005,repeated_seed,capacity d=64 L=1 H=4,present_f1,0.928996782297,0.0110614461194,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_006,repeated_seed,capacity d=64 L=1 H=4,pr_auc,0.952984528616,0.0103813299386,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_007,repeated_seed,capacity d=64 L=1 H=4,accuracy,0.99530411449,0.000387310109027,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_008,repeated_seed,capacity d=64 L=1 H=4,throughput_flows_per_sec,1141720.19881,17714.3485358,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_009,repeated_seed,capacity d=64 L=1 H=8,present_f1,0.929960767208,0.00654165441695,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_010,repeated_seed,capacity d=64 L=1 H=8,pr_auc,0.951397404631,0.00282758174597,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_011,repeated_seed,capacity d=64 L=1 H=8,accuracy,0.99530411449,0.000223613595707,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_012,repeated_seed,capacity d=64 L=1 H=8,throughput_flows_per_sec,866976.747467,10132.7154454,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_013,repeated_seed,capacity d=64 L=2 H=2,present_f1,0.942181331148,0.0102405975657,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_014,repeated_seed,capacity d=64 L=2 H=2,pr_auc,0.955200653638,0.00688616085406,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_015,repeated_seed,capacity d=64 L=2 H=2,accuracy,0.996049493143,0.000645516848378,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_016,repeated_seed,capacity d=64 L=2 H=2,throughput_flows_per_sec,765835.86021,7265.42872956,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_017,repeated_seed,capacity d=64 L=2 H=4,present_f1,0.920132463994,0.0350277885275,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_018,repeated_seed,capacity d=64 L=2 H=4,pr_auc,0.956425813378,0.00355319542725,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_019,repeated_seed,capacity d=64 L=2 H=4,accuracy,0.995974955277,0.000447227191413,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_020,repeated_seed,capacity d=64 L=2 H=4,throughput_flows_per_sec,611431.0099,4607.06885073,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_021,repeated_seed,capacity d=64 L=2 H=8,present_f1,0.918167274936,0.0398010319854,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_022,repeated_seed,capacity d=64 L=2 H=8,pr_auc,0.916960597947,0.0520215227173,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_023,repeated_seed,capacity d=64 L=2 H=8,accuracy,0.995676803816,0.000258206739351,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_024,repeated_seed,capacity d=64 L=2 H=8,throughput_flows_per_sec,447072.808544,2336.90055274,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_025,repeated_seed,capacity d=64 L=4 H=2,present_f1,0.94681197881,0.00260824839409,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_026,repeated_seed,capacity d=64 L=4 H=2,pr_auc,0.95799879454,0.0068681399998,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_027,repeated_seed,capacity d=64 L=4 H=2,accuracy,0.996198568873,0.000223613595707,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_028,repeated_seed,capacity d=64 L=4 H=2,throughput_flows_per_sec,396859.958911,1356.81662695,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_029,repeated_seed,capacity d=64 L=4 H=4,present_f1,0.878075945359,0.116559631569,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_030,repeated_seed,capacity d=64 L=4 H=4,pr_auc,0.95322132664,0.00345843697967,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_031,repeated_seed,capacity d=64 L=4 H=4,accuracy,0.996049493143,0.000516413478703,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_032,repeated_seed,capacity d=64 L=4 H=4,throughput_flows_per_sec,314498.253156,640.804505834,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_033,repeated_seed,capacity d=64 L=4 H=8,present_f1,0.869793590664,0.109557016745,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_034,repeated_seed,capacity d=64 L=4 H=8,pr_auc,0.911107087516,0.048090965148,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_035,repeated_seed,capacity d=64 L=4 H=8,accuracy,0.995453190221,0.000516413478703,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_036,repeated_seed,capacity d=64 L=4 H=8,throughput_flows_per_sec,226493.840572,373.57931012,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_037,repeated_seed,capacity d=128 L=1 H=2,present_f1,0.917885040823,0.0367206435219,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_038,repeated_seed,capacity d=128 L=1 H=2,pr_auc,0.935504522051,0.0200992284514,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_039,repeated_seed,capacity d=128 L=1 H=2,accuracy,0.995676803816,0.000341575409582,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_040,repeated_seed,capacity d=128 L=1 H=2,throughput_flows_per_sec,1019046.70483,4474.23200554,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_041,repeated_seed,capacity d=128 L=1 H=4,present_f1,0.940962366708,0.00502349777224,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_042,repeated_seed,capacity d=128 L=1 H=4,pr_auc,0.937833308143,0.00577026255584,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_043,repeated_seed,capacity d=128 L=1 H=4,accuracy,0.995751341682,0.000223613595707,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_044,repeated_seed,capacity d=128 L=1 H=4,throughput_flows_per_sec,893538.44974,4121.60518484,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_045,repeated_seed,capacity d=128 L=1 H=8,present_f1,0.86273734097,0.110455224749,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_046,repeated_seed,capacity d=128 L=1 H=8,pr_auc,0.946368749624,0.00848313802214,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_047,repeated_seed,capacity d=128 L=1 H=8,accuracy,0.99515503876,0.000846587409928,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_048,repeated_seed,capacity d=128 L=1 H=8,throughput_flows_per_sec,696143.703614,5005.09632115,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_049,repeated_seed,capacity d=128 L=2 H=2,present_f1,0.915282391662,0.0467101704007,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_050,repeated_seed,capacity d=128 L=2 H=2,pr_auc,0.946634655597,0.00865429190108,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_051,repeated_seed,capacity d=128 L=2 H=2,accuracy,0.995602265951,0.000562748541687,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_052,repeated_seed,capacity d=128 L=2 H=2,throughput_flows_per_sec,533407.226032,4772.92100631,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_053,repeated_seed,capacity d=128 L=2 H=4,present_f1,0.936170006643,0.0139238628582,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_054,repeated_seed,capacity d=128 L=2 H=4,pr_auc,0.951105987298,0.00514377031476,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_055,repeated_seed,capacity d=128 L=2 H=4,accuracy,0.995527728086,0.000806250285211,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_056,repeated_seed,capacity d=128 L=2 H=4,throughput_flows_per_sec,457926.295385,4267.16907809,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_057,repeated_seed,capacity d=128 L=2 H=8,present_f1,0.938040707191,0.0132063440212,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_058,repeated_seed,capacity d=128 L=2 H=8,pr_auc,0.950969258332,0.00912377455562,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_059,repeated_seed,capacity d=128 L=2 H=8,accuracy,0.995825879547,0.000846587409928,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_060,repeated_seed,capacity d=128 L=2 H=8,throughput_flows_per_sec,359600.862167,1048.85984953,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_061,repeated_seed,capacity d=128 L=4 H=2,present_f1,0.937121350452,0.0103842732756,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_062,repeated_seed,capacity d=128 L=4 H=2,pr_auc,0.950730430994,0.0100597465752,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_063,repeated_seed,capacity d=128 L=4 H=2,accuracy,0.995676803816,0.000645516848378,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_064,repeated_seed,capacity d=128 L=4 H=2,throughput_flows_per_sec,268727.787286,447.49727167,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_065,repeated_seed,capacity d=128 L=4 H=4,present_f1,0.92414564272,0.0333508681212,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_066,repeated_seed,capacity d=128 L=4 H=4,pr_auc,0.954864640715,0.00318328400424,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_067,repeated_seed,capacity d=128 L=4 H=4,accuracy,0.996273106738,0.000683150819165,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_068,repeated_seed,capacity d=128 L=4 H=4,throughput_flows_per_sec,232830.704185,1045.04252426,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_069,repeated_seed,capacity d=128 L=4 H=8,present_f1,0.820434820417,0.114193020577,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_070,repeated_seed,capacity d=128 L=4 H=8,pr_auc,0.888425369807,0.106554650911,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_071,repeated_seed,capacity d=128 L=4 H=8,accuracy,0.995378652355,0.000718817140801,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_072,repeated_seed,capacity d=128 L=4 H=8,throughput_flows_per_sec,179632.524045,509.510888205,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_073,repeated_seed,capacity d=256 L=1 H=2,present_f1,0.915520126361,0.048369081626,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_074,repeated_seed,capacity d=256 L=1 H=2,pr_auc,0.954751491569,0.00701615814719,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_075,repeated_seed,capacity d=256 L=1 H=2,accuracy,0.995676803816,0.000562748541687,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_076,repeated_seed,capacity d=256 L=1 H=2,throughput_flows_per_sec,637204.214938,3796.46569473,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_077,repeated_seed,capacity d=256 L=1 H=4,present_f1,0.915408992668,0.0341346918553,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_078,repeated_seed,capacity d=256 L=1 H=4,pr_auc,0.944317312434,0.0132639242348,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_079,repeated_seed,capacity d=256 L=1 H=4,accuracy,0.995676803816,0.000129103369676,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_080,repeated_seed,capacity d=256 L=1 H=4,throughput_flows_per_sec,580685.636421,2311.68750966,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_081,repeated_seed,capacity d=256 L=1 H=8,present_f1,0.944215090086,0.00106516188808,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_082,repeated_seed,capacity d=256 L=1 H=8,pr_auc,0.943901666318,0.0173179126578,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_083,repeated_seed,capacity d=256 L=1 H=8,accuracy,0.995900417412,0.000129103369676,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_084,repeated_seed,capacity d=256 L=1 H=8,throughput_flows_per_sec,499353.260772,2368.00296809,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_085,repeated_seed,capacity d=256 L=2 H=2,present_f1,0.870612839107,0.0734411215298,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_086,repeated_seed,capacity d=256 L=2 H=2,pr_auc,0.951743390222,0.00932117005114,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_087,repeated_seed,capacity d=256 L=2 H=2,accuracy,0.995527728086,0.00067084078712,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_088,repeated_seed,capacity d=256 L=2 H=2,throughput_flows_per_sec,323130.653237,1738.5716202,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_089,repeated_seed,capacity d=256 L=2 H=4,present_f1,0.945612368289,0.00628012238283,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_090,repeated_seed,capacity d=256 L=2 H=4,pr_auc,0.946713417592,0.0145279181139,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_091,repeated_seed,capacity d=256 L=2 H=4,accuracy,0.996124031008,0.000465488819201,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_092,repeated_seed,capacity d=256 L=2 H=4,throughput_flows_per_sec,292719.879076,2528.48860667,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_093,repeated_seed,capacity d=256 L=2 H=8,present_f1,0.922297235145,0.0358409649505,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_094,repeated_seed,capacity d=256 L=2 H=8,pr_auc,0.940894076766,0.0106061573029,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_095,repeated_seed,capacity d=256 L=2 H=8,accuracy,0.995900417412,0.000129103369676,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_096,repeated_seed,capacity d=256 L=2 H=8,throughput_flows_per_sec,250840.735909,1105.92763114,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_097,repeated_seed,capacity d=256 L=4 H=2,present_f1,0.895964820253,0.0883911469076,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_098,repeated_seed,capacity d=256 L=4 H=2,pr_auc,0.944036928099,0.0120067926286,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_099,repeated_seed,capacity d=256 L=4 H=2,accuracy,0.995825879547,0.000683150819165,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_100,repeated_seed,capacity d=256 L=4 H=2,throughput_flows_per_sec,160798.840481,233.418506718,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_101,repeated_seed,capacity d=256 L=4 H=4,present_f1,0.906916118177,0.0803782716625,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_102,repeated_seed,capacity d=256 L=4 H=4,pr_auc,0.942928543926,0.0132256125928,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_103,repeated_seed,capacity d=256 L=4 H=4,accuracy,0.996124031008,0.00100832955117,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_104,repeated_seed,capacity d=256 L=4 H=4,throughput_flows_per_sec,146167.349753,267.067158457,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_105,repeated_seed,capacity d=256 L=4 H=8,present_f1,0.933884733765,0.0165208132966,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_106,repeated_seed,capacity d=256 L=4 H=8,pr_auc,0.936119227996,0.00806795467417,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_107,repeated_seed,capacity d=256 L=4 H=8,accuracy,0.995453190221,0.000785305139598,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_108,repeated_seed,capacity d=256 L=4 H=8,throughput_flows_per_sec,126477.787648,239.375040088,3,public summary table,main_result,Canonical capacity mean/std; Macro-F1 metric.
+robustness_sensitivity_109,repeated_seed,head Encoder-style pool=mean causal=0,present_f1,0.945612368289,0.00628012238283,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_110,repeated_seed,head Encoder-style pool=mean causal=0,all_label_macro_f1,0.675437405921,0.00448580170202,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_111,repeated_seed,head Encoder-style pool=mean causal=0,pr_auc,0.946713417592,0.0145279181139,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_112,repeated_seed,head Encoder-style pool=mean causal=0,accuracy,0.996124031008,0.000465488819201,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_113,repeated_seed,head Encoder-style pool=mean causal=0,throughput_flows_per_sec,292719.879076,2528.48860667,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_114,repeated_seed,head Encoder-style pool=cls causal=0,present_f1,0.936696839794,0.00525741325281,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_115,repeated_seed,head Encoder-style pool=cls causal=0,all_label_macro_f1,0.669069171282,0.00375529518058,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_116,repeated_seed,head Encoder-style pool=cls causal=0,pr_auc,0.952775236924,0.00843916114649,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_117,repeated_seed,head Encoder-style pool=cls causal=0,accuracy,0.995602265951,0.000258206739351,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_118,repeated_seed,head Encoder-style pool=cls causal=0,throughput_flows_per_sec,295580.835568,1030.77111603,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_119,repeated_seed,head Encoder-style pool=attn causal=0,present_f1,0.942814232353,0.00508594562835,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_120,repeated_seed,head Encoder-style pool=attn causal=0,all_label_macro_f1,0.673438737395,0.00363281830597,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_121,repeated_seed,head Encoder-style pool=attn causal=0,pr_auc,0.965016002217,0.00603441974355,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_122,repeated_seed,head Encoder-style pool=attn causal=0,accuracy,0.995974955277,0.000223613595707,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_123,repeated_seed,head Encoder-style pool=attn causal=0,throughput_flows_per_sec,287912.31522,2676.96818951,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_124,repeated_seed,head Encoder-style pool=last causal=0,present_f1,0.889419854525,0.0831429190486,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_125,repeated_seed,head Encoder-style pool=last causal=0,all_label_macro_f1,0.63529989609,0.0593877993204,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_126,repeated_seed,head Encoder-style pool=last causal=0,pr_auc,0.943206518958,0.0162939712293,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_127,repeated_seed,head Encoder-style pool=last causal=0,accuracy,0.995453190221,0.000341575409582,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_128,repeated_seed,head Encoder-style pool=last causal=0,throughput_flows_per_sec,293704.343216,1046.2572604,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_129,repeated_seed,head Decoder-style pool=mean causal=1,present_f1,0.866451798941,0.0551042343081,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_130,repeated_seed,head Decoder-style pool=mean causal=1,all_label_macro_f1,0.618894142101,0.0393601673629,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_131,repeated_seed,head Decoder-style pool=mean causal=1,pr_auc,0.94604319888,0.0123392411405,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_132,repeated_seed,head Decoder-style pool=mean causal=1,accuracy,0.995527728086,0.00102472622875,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_133,repeated_seed,head Decoder-style pool=mean causal=1,throughput_flows_per_sec,250857.732877,715.473548994,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_134,repeated_seed,head Decoder-style pool=cls causal=1,present_f1,0.197004085338,0,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_135,repeated_seed,head Decoder-style pool=cls causal=1,all_label_macro_f1,0.140717203813,0,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_136,repeated_seed,head Decoder-style pool=cls causal=1,pr_auc,0.2,0,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_137,repeated_seed,head Decoder-style pool=cls causal=1,accuracy,0.970483005367,0,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_138,repeated_seed,head Decoder-style pool=cls causal=1,throughput_flows_per_sec,253024.722186,593.174028221,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_139,repeated_seed,head Decoder-style pool=attn causal=1,present_f1,0.915367310868,0.0365745046411,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_140,repeated_seed,head Decoder-style pool=attn causal=1,all_label_macro_f1,0.653833793477,0.0261246461722,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_141,repeated_seed,head Decoder-style pool=attn causal=1,pr_auc,0.956006370521,0.00324850261446,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_142,repeated_seed,head Decoder-style pool=attn causal=1,accuracy,0.995602265951,0.000465488819201,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_143,repeated_seed,head Decoder-style pool=attn causal=1,throughput_flows_per_sec,249040.74601,291.815372066,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_144,repeated_seed,head Decoder-style pool=last causal=1,present_f1,0.897317939159,0.0802787162546,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_145,repeated_seed,head Decoder-style pool=last causal=1,all_label_macro_f1,0.640941385114,0.0573419401819,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_146,repeated_seed,head Decoder-style pool=last causal=1,pr_auc,0.949574992547,0.0264208158687,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_147,repeated_seed,head Decoder-style pool=last causal=1,accuracy,0.995900417412,0.000846587409928,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_148,repeated_seed,head Decoder-style pool=last causal=1,throughput_flows_per_sec,253058.447076,1426.27936241,3,public summary table,main_result,Head ablation verified; paper should call primary F1 Macro-F1.
+robustness_sensitivity_149,repeated_seed,throughput_max_len=64.0,accuracy,0.839706370498,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_150,repeated_seed,throughput_max_len=64.0,macro_f1,0.5914643141,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_151,repeated_seed,throughput_max_len=64.0,throughput_flows_per_sec,5322.599,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_152,repeated_seed,throughput_max_len=128.0,accuracy,0.839276482976,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_153,repeated_seed,throughput_max_len=128.0,macro_f1,0.58836363037,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_154,repeated_seed,throughput_max_len=128.0,throughput_flows_per_sec,5381.15,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_155,repeated_seed,throughput_max_len=256.0,accuracy,0.861842857065,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_156,repeated_seed,throughput_max_len=256.0,macro_f1,0.664583221342,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_157,repeated_seed,throughput_max_len=256.0,throughput_flows_per_sec,3196.322,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_158,repeated_seed,throughput_max_len=512.0,accuracy,0.867531157776,9.38316920074e-05,3,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_159,repeated_seed,throughput_max_len=512.0,macro_f1,0.679551024134,0.00301253810055,3,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_160,repeated_seed,throughput_max_len=512.0,throughput_flows_per_sec,3239.81133333,207.542377245,3,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_161,repeated_seed,throughput_max_len=1024.0,accuracy,0.870522231715,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_162,repeated_seed,throughput_max_len=1024.0,macro_f1,0.691844954435,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_163,repeated_seed,throughput_max_len=1024.0,throughput_flows_per_sec,3772.699,,1,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_164,repeated_seed,throughput_max_len=1536.0,accuracy,0.873030815861,0.000253954951914,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_165,repeated_seed,throughput_max_len=1536.0,macro_f1,0.701206918503,0.00129890160753,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_166,repeated_seed,throughput_max_len=1536.0,throughput_flows_per_sec,2482.9515,22.5927687657,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_167,repeated_seed,throughput_max_len=2048.0,accuracy,0.875297248176,4.2325825319e-05,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_168,repeated_seed,throughput_max_len=2048.0,macro_f1,0.708431244549,0.00207022161253,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_169,repeated_seed,throughput_max_len=2048.0,throughput_flows_per_sec,1828.3495,6.8780276606,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_170,repeated_seed,throughput_max_len=4096.0,accuracy,0.882082941084,0.00013467308056,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_171,repeated_seed,throughput_max_len=4096.0,macro_f1,0.765301733702,0.00309915472513,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_172,repeated_seed,throughput_max_len=4096.0,throughput_flows_per_sec,608.494,1.58957604411,2,public summary table,main_result,LLM context summary; macro-F1 from LLM evaluation pipeline.
+robustness_sensitivity_173,repeated_seed,family=CTI-BERT,accuracy,0.867496694219,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_174,repeated_seed,family=CTI-BERT,macro_f1,0.678729279216,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_175,repeated_seed,family=CTI-BERT,throughput_flows_per_sec,13024.272,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_176,repeated_seed,family=DeBERTa-v3,accuracy,0.861429294386,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_177,repeated_seed,family=DeBERTa-v3,macro_f1,0.639601782653,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_178,repeated_seed,family=DeBERTa-v3,throughput_flows_per_sec,5706.399,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_179,repeated_seed,family=ModernBERT,accuracy,0.867415070006,0.000156802861666,7,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_180,repeated_seed,family=ModernBERT,macro_f1,0.678685161824,0.00233152123741,7,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_181,repeated_seed,family=ModernBERT,throughput_flows_per_sec,3382.10028571,192.439286257,7,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_182,repeated_seed,family=ModernBERT-DAPT,accuracy,0.867719800402,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_183,repeated_seed,family=ModernBERT-DAPT,macro_f1,0.677243652059,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_184,repeated_seed,family=ModernBERT-DAPT,throughput_flows_per_sec,3330.276,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_185,repeated_seed,family=Qwen2.5-0.5B,accuracy,0.867491252605,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_186,repeated_seed,family=Qwen2.5-0.5B,macro_f1,0.676886896482,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_187,repeated_seed,family=Qwen2.5-0.5B,throughput_flows_per_sec,5441.073,,1,public summary table,main_result,LLM pretraining summary; some rows are single-run.
+robustness_sensitivity_188,repeated_seed,throughput_max_len=512.0 family=ModernBERT,accuracy,0.962700731606,4.0670108889e-05,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_189,repeated_seed,throughput_max_len=512.0 family=ModernBERT,macro_f1,0.795906913406,0.000206481904729,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_190,repeated_seed,throughput_max_len=512.0 family=ModernBERT,throughput_flows_per_sec,3264.3585,37.6739421948,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_191,repeated_seed,throughput_max_len=512.0 family=Qwen2.5-0.5B,accuracy,0.967025951318,0.000105742283111,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_192,repeated_seed,throughput_max_len=512.0 family=Qwen2.5-0.5B,macro_f1,0.802218966628,5.365824931e-06,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_193,repeated_seed,throughput_max_len=512.0 family=Qwen2.5-0.5B,throughput_flows_per_sec,5152.9385,381.773315124,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_194,repeated_seed,throughput_max_len=2048.0 family=ModernBERT,accuracy,0.970425159895,1.62680435556e-05,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_195,repeated_seed,throughput_max_len=2048.0 family=ModernBERT,macro_f1,0.809934865452,9.09670159167e-05,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_196,repeated_seed,throughput_max_len=2048.0 family=ModernBERT,throughput_flows_per_sec,1826.288,5.28774450971,2,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_197,repeated_seed,throughput_max_len=2048.0 family=Qwen2.5-0.5B,accuracy,0.970931302627,,1,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_198,repeated_seed,throughput_max_len=2048.0 family=Qwen2.5-0.5B,macro_f1,0.809920720773,,1,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_199,repeated_seed,throughput_max_len=2048.0 family=Qwen2.5-0.5B,throughput_flows_per_sec,1001.659,,1,public summary table,main_result,LLM encoder/decoder summary; some rows are single-run.
+robustness_sensitivity_200,window_size,ws4_s2_mean_pooling_report,accuracy,0.952592666934,0.000615512946988,3,public summary table,artifact_summary,"Existing ws4/s2 seed triplet; older report format, not locked for main paper."
+robustness_sensitivity_201,window_size,ws4_s2_mean_pooling_report,macro_f1,0.771011688293,0.0158972797741,3,public summary table,artifact_summary,"Existing ws4/s2 seed triplet; older report format, not locked for main paper."
+robustness_sensitivity_202,window_size,ws4_s2_mean_pooling_report,throughput_windows_per_sec,8207.8816172,69.8369516904,3,public summary table,artifact_summary,"Existing ws4/s2 seed triplet; older report format, not locked for main paper."
+robustness_sensitivity_203,window_size,ws4_s2_mean_pooling_report,pr_auc,0.808248322789,0,1,public summary table,artifact_summary,"Existing ws4/s2 seed triplet; older report format, not locked for main paper."
+robustness_sensitivity_204,window_size,ws32_s16_pool_mean_with_logits,accuracy,0.996124031008,0.000465488819201,3,public summary table,artifact_summary,Existing ws32/s16 seed triplet with logits; useful artifact evidence but not a complete window-size sweep.
+robustness_sensitivity_205,window_size,ws32_s16_pool_mean_with_logits,macro_f1,0.945612368289,0.00628012238283,3,public summary table,artifact_summary,Existing ws32/s16 seed triplet with logits; useful artifact evidence but not a complete window-size sweep.
+robustness_sensitivity_206,window_size,ws32_s16_pool_mean_with_logits,throughput_windows_per_sec,5114.0910752,464.710121125,3,public summary table,artifact_summary,Existing ws32/s16 seed triplet with logits; useful artifact evidence but not a complete window-size sweep.
+robustness_sensitivity_207,window_size,ws32_s16_pool_mean_with_logits,pr_auc,0.94671340919,0.0145279300419,3,public summary table,artifact_summary,Existing ws32/s16 seed triplet with logits; useful artifact evidence but not a complete window-size sweep.

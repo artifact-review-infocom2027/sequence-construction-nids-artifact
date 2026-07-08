@@ -1,0 +1,6 @@
+scope_item,repository_status
+Packaged evidence,Included as paper-level CSV files and figures.
+Packaged metadata,Included for selected representative configurations.
+Smoke tests,Included and runnable with synthetic or dry-run inputs.
+External raw data,Required only for full-scale reproduction outside this repository.
+External model assets,Required only for full-scale model reproduction outside this repository.

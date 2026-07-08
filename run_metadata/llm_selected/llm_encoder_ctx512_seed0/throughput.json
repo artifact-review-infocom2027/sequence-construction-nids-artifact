@@ -1,0 +1,12 @@
+{
+  "assumed_deploy_stride": 16,
+  "autocast": "bf16",
+  "backbone_measured": "answerdotai/ModernBERT-base",
+  "backbone_params": 149014272,
+  "batch_size": 8,
+  "device": "cuda",
+  "flows_per_sec": 3237.7188907311815,
+  "latency_ms_per_batch": 39.53400660150995,
+  "max_len": 512,
+  "windows_per_sec": 202.35743067069885
+}

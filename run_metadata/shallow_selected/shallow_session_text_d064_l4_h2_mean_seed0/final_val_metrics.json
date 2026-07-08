@@ -1,0 +1,14 @@
+{
+  "acc": 0.9976164680390033,
+  "macro_f1_reference": 0.5333360075777398,
+  "macro_f1": 0.9333380132610447,
+  "loss": 0.006594895453245782,
+  "num_labels": 4,
+  "pr_auc_macro_present": 0.9734415941854514,
+  "pr_auc_n_present_classes": 4,
+  "precision_macro_reference": 0.5285435811751601,
+  "precision_macro": 0.9249512670565302,
+  "recall_macro_reference": 0.5463341969488552,
+  "recall_macro": 0.9560848446604967,
+  "windows_per_sec": 4003.232349227323
+}

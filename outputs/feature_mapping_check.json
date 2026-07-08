@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "feature_rows": 47,
+    "feature_row_count_ok": true,
+    "feature_columns_ok": true,
+    "source_feature_mapping_present": true,
+    "source_mapping_columns_ok": true,
+    "all_features_have_source_mapping": true,
+    "source_mapping_has_mqcids_rows": true,
+    "source_mapping_scope_clean": true,
+    "cicids_packet_counts_use_count_columns": true,
+    "pkt_len_mean_marked_fallback": true,
+    "mqcids_alias_rows_note_coalescing": true,
+    "public_scope_strings_clean": true,
+    "excluded_identifier_fields_present": true,
+    "identifier_model_inputs": [],
+    "public_labels_present": true,
+    "label_scopes_present": true,
+    "label_scopes_clean": true,
+    "symm_ips_ports_model_input_false": true,
+    "harmonization_self_test_passed": true,
+    "self_test_duplicate_columns_absent": true,
+    "self_test_cicids_directional_pkt_mean_preferred": true,
+    "self_test_unsw_attack_cat_preferred": true,
+    "self_test_mqcids_service_coalesced": true
+  },
+  "self_test_stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": {\n    \"duplicate_columns_absent\": true,\n    \"cicids_directional_pkt_mean_preferred\": true,\n    \"cicids_packet_counts_from_counts\": true,\n    \"cicids_packet_counts_not_rates\": true,\n    \"cicids_labels_mapped\": true,\n    \"unsw_attack_cat_preferred\": true,\n    \"unsw_identifiers_dropped\": true,\n    \"mqcids_service_coalesced\": true,\n    \"mqcids_labels_mapped\": true,\n    \"mqcids_identifiers_dropped\": true,\n    \"model_columns_plus_label\": true\n  },\n  \"case_rows\": {\n    \"cicids\": 4,\n    \"unsw\": 3,\n    \"mqcids\": 2\n  },\n  \"columns\": 47\n}"
+}
