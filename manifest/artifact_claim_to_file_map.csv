@@ -40,6 +40,7 @@ Label harmonization notes,docs/label_harmonization.md,documentation,included,pub
 Reference harmonization script,scripts/data_preparation/harmonize_schema.py,reference script,included,public artifact file
 Feature and label mapping verifier,scripts/data_preparation/verify_feature_and_label_mappings.py,verification script,included,public artifact file
 Table I representation,evidence/locked_sources/representation/representation_ablation.csv,evidence CSV,included,public artifact file
+Table II parameter audit,evidence/locked_sources/capacity/table2_shallow_params_audit.csv,derived evidence CSV,included,paper-facing parameter-count audit derived from locked capacity source and model metadata
 Deployment benchmark,evidence/deployment/posthoc_deployment_full_benchmark_summary.csv,evidence CSV,included,public artifact file
 Source-to-canonical feature mapping,docs/source_feature_mapping.csv,feature mapping CSV,included,public artifact file
 Harmonization self-test output,outputs/harmonize_schema_self_test.json,verification output,included,public artifact file

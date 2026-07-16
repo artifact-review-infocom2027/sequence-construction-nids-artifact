@@ -59,5 +59,6 @@ paper_source_map:
     evidence_csv: evidence/locked_sources/representation/representation_ablation.csv
   table_ii:
     evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+    parameter_audit_csv: evidence/locked_sources/capacity/table2_shallow_params_audit.csv
   deployment:
     evidence_csv: evidence/deployment/posthoc_deployment_full_benchmark_summary.csv
