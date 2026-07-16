@@ -7,6 +7,7 @@ The repository evidence files support the paper tables and figures through locke
 | Representation ablation | `evidence/locked_sources/representation/representation_ablation.csv` | supported |
 | Temporalization comparison | `evidence/locked_sources/temporalization/temporalization_values.csv` and `figures/temporalization/temporalization_comparison.png` | supported |
 | Capacity ablation | `evidence/locked_sources/capacity/capacity_ablation_meanstd.csv` and `figures/capacity/capacity_heatmap.png` | supported |
+| Table II parameter counts | `evidence/locked_sources/capacity/table2_shallow_params_audit.csv` | supported |
 | Head ablation | `evidence/locked_sources/head_ablation/head_ablation_meanstd.csv` and `figures/head_ablation/head_ablation.png` | supported |
 | LLM comparisons | `evidence/locked_sources/llm_comparison/` | supported |
 | Context length | `evidence/locked_sources/context_length/llm_context_length_meanstd.csv` | supported |
