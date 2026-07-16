@@ -52,6 +52,8 @@ python scripts/build_windows.py --config configs/build_windows_session.yaml --dr
 
 Start with `manifest/paper_source_map.yaml` for the paper-level source map.
 
+Supplementary appendix material is available under `docs/supplementary/`.
+
 ## Feature and Label Harmonization
 
 The public schema and label mapping layer is documented in
