@@ -52,7 +52,33 @@ python scripts/build_windows.py --config configs/build_windows_session.yaml --dr
 
 Start with `manifest/paper_source_map.yaml` for the paper-level source map.
 
-Supplementary appendix material is available under `docs/supplementary/`.
+## Supplementary Material
+
+The reviewer-facing supplementary appendix is available in
+`docs/supplementary/`.
+
+This material expands the paper appendix with additional implementation
+details, dataset notes, schema harmonization notes, model descriptions,
+experimental settings, additional ablations, reproducibility guidance, and
+frequently asked questions.
+
+Start with `docs/supplementary/README.md`, which links to the supplementary
+sections:
+
+- `01_overview.md`: overview of the supplementary material.
+- `02_datasets.md`: dataset descriptions and scope.
+- `03_schema_harmonization.md`: schema alignment and preprocessing details.
+- `04_feature_schema.md`: public feature schema summary.
+- `05_experimental_setup.md`: experimental configuration.
+- `06_transformer_models.md`: shallow and pretrained transformer model details.
+- `07_design_guidelines.md`: practical design recommendations.
+- `08_additional_ablations.md`: supplementary ablation summaries.
+- `09_reproducibility.md`: reproducibility and artifact-use notes.
+- `10_faq.md`: reviewer-oriented FAQ.
+
+The supplementary material is descriptive and reviewer-facing. It does not
+contain raw traffic data, private logs, serialized arrays, checkpoints, or
+non-anonymous project metadata.
 
 ## Feature and Label Harmonization
 
