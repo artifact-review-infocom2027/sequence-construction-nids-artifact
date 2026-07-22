@@ -39,6 +39,8 @@ python scripts/build_windows.py --config configs/build_windows_session.yaml --dr
   parameter-count audit.
 - `evidence/locked_sources/structural_preservation/`: locked evidence and
   reviewer-facing notes for the structural-preservation diagnostic in Table I.
+- `evidence/locked_sources/rq5_cross_dataset/`: locked evidence and
+  reviewer-facing notes for the RQ5 cross-dataset generalization table.
 - `evidence/seed_level/`: compact seed-level summaries for reported
   variability.
 - `evidence/deployment/`: deployment benchmark summary.

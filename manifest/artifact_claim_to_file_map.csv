@@ -52,3 +52,7 @@ Structural preservation full summary,evidence/locked_sources/structural_preserva
 Structural preservation sanity checks,evidence/locked_sources/structural_preservation/structural_preservation_sanity.json,sanity JSON,included,Sanity metadata and short-session caveat for structural-preservation diagnostics.
 Structural preservation reviewer notes,evidence/locked_sources/structural_preservation/README.md,documentation,included,Reviewer-facing notes for the structural-preservation evidence.
 Structural preservation recipe,scripts/verification/compute_structural_preservation_recipe.py,reviewer recipe script,included,Input-driven recipe documenting metric computation logic without private paths.
+Table IV / RQ5 cross-dataset generalization,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv,paper table CSV,included,Reviewer-facing RQ5 cross-dataset generalization table.
+Table IV / RQ5 cross-dataset generalization LaTeX,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex,paper table LaTeX,included,Compact LaTeX source for the RQ5 table.
+RQ5 cross-dataset preserved input,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv,source CSV,included,Preserved cross-dataset input table.
+RQ5 cross-dataset reviewer notes,evidence/locked_sources/rq5_cross_dataset/README.md,documentation,included,Reviewer-facing notes for RQ5 cross-dataset evidence.

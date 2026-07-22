@@ -73,3 +73,14 @@ paper_source_map:
     evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
     parameter_audit_csv: evidence/locked_sources/capacity/table2_shallow_params_audit.csv
     notes: Shallow capacity evidence and paper-facing parameter-count audit.
+  table_iv:
+    evidence_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv
+    evidence_tex: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex
+    raw_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv
+    readme: evidence/locked_sources/rq5_cross_dataset/README.md
+    notes: RQ5 cross-dataset generalization table; transfer is evaluated without fine-tuning.
+  rq5_cross_dataset_generalization:
+    paper_table_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv
+    paper_table_tex: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex
+    raw_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv
+    readme: evidence/locked_sources/rq5_cross_dataset/README.md

@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Cross-dataset generalization under domain shift. Models are trained on one dataset and evaluated directly on another without fine-tuning. $\Delta$F1 is Session minus Sliding; positive $\Delta$TRG indicates a smaller transfer robustness gap for Session.}
+\label{tab:cross_dataset}
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{lcccccc}
+\toprule
+Transfer & Sliding F1 & Session F1 & $\Delta$F1 & Sliding TRG & Session TRG & $\Delta$TRG \\
+\midrule
+CICIDS $\rightarrow$ UNSW & 0.420 & 0.423 & 0.003 & 0.199 & 0.198 & 0.001 \\
+CICIDS $\rightarrow$ MQCIDS & 0.333 & 0.333 & 0.000 & 0.181 & 0.161 & 0.020 \\
+UNSW $\rightarrow$ MQCIDS & 0.383 & 0.439 & 0.056 & 0.612 & 0.557 & 0.055 \\
+UNSW $\rightarrow$ CICIDS & 0.480 & 0.506 & 0.026 & 0.477 & 0.451 & 0.026 \\
+MQCIDS $\rightarrow$ UNSW & 0.479 & 0.482 & 0.003 & 0.506 & 0.510 & -0.004 \\
+MQCIDS $\rightarrow$ CICIDS & 0.387 & 0.355 & -0.032 & 0.598 & 0.637 & -0.039 \\
+\midrule
+Avg. & 0.414 & 0.423 & 0.009 & 0.429 & 0.419 & 0.010 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.8em}
+\end{table}
