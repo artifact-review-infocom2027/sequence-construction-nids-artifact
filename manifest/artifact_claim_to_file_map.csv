@@ -39,10 +39,16 @@ Label harmonization rules,docs/label_harmonization.csv,label mapping CSV,include
 Label harmonization notes,docs/label_harmonization.md,documentation,included,public artifact file
 Reference harmonization script,scripts/data_preparation/harmonize_schema.py,reference script,included,public artifact file
 Feature and label mapping verifier,scripts/data_preparation/verify_feature_and_label_mappings.py,verification script,included,public artifact file
-Table I representation,evidence/locked_sources/representation/representation_ablation.csv,evidence CSV,included,public artifact file
-Table II parameter audit,evidence/locked_sources/capacity/table2_shallow_params_audit.csv,derived evidence CSV,included,paper-facing parameter-count audit derived from locked capacity source and model metadata
+RQ1 representation ablation source,evidence/locked_sources/representation/representation_ablation.csv,evidence CSV,included,public artifact file
+Shallow capacity parameter audit,evidence/locked_sources/capacity/table2_shallow_params_audit.csv,derived evidence CSV,included,paper-facing parameter-count audit derived from locked capacity source and model metadata
 Deployment benchmark,evidence/deployment/posthoc_deployment_full_benchmark_summary.csv,evidence CSV,included,public artifact file
 Source-to-canonical feature mapping,docs/source_feature_mapping.csv,feature mapping CSV,included,public artifact file
 Harmonization self-test output,outputs/harmonize_schema_self_test.json,verification output,included,public artifact file
 Harmonization source summary,outputs/harmonization_source_summary.json,verification output,included,public artifact file
 Supplementary appendix,docs/supplementary/README.md,supplementary documentation,included,reviewer-facing supplementary appendix index
+Table I structural preservation,evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv,paper table CSV,included,Dataset-level structural-preservation table using emittable related-flow pairs.
+Table I structural preservation LaTeX,evidence/locked_sources/structural_preservation/structural_preservation_paper_table.tex,paper table LaTeX,included,Reviewer-facing LaTeX source for structural-preservation table.
+Structural preservation full summary,evidence/locked_sources/structural_preservation/structural_preservation_summary.csv,full evidence CSV,included,Full structural-preservation metrics for sensitivity settings.
+Structural preservation sanity checks,evidence/locked_sources/structural_preservation/structural_preservation_sanity.json,sanity JSON,included,Sanity metadata and short-session caveat for structural-preservation diagnostics.
+Structural preservation reviewer notes,evidence/locked_sources/structural_preservation/README.md,documentation,included,Reviewer-facing notes for the structural-preservation evidence.
+Structural preservation recipe,scripts/verification/compute_structural_preservation_recipe.py,reviewer recipe script,included,Input-driven recipe documenting metric computation logic without private paths.

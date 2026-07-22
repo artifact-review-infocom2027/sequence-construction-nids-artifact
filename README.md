@@ -35,7 +35,10 @@ python scripts/build_windows.py --config configs/build_windows_session.yaml --dr
 - `manifest/`: public source map, claim-to-file map, run index, scope summary,
   checksums, and artifact manifest.
 - `evidence/locked_sources/`: CSV sources for paper tables and figures,
-  including the Table II parameter-count audit.
+  including the structural-preservation evidence and shallow-capacity
+  parameter-count audit.
+- `evidence/locked_sources/structural_preservation/`: locked evidence and
+  reviewer-facing notes for the structural-preservation diagnostic in Table I.
 - `evidence/seed_level/`: compact seed-level summaries for reported
   variability.
 - `evidence/deployment/`: deployment benchmark summary.

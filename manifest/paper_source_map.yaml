@@ -56,9 +56,20 @@ paper_source_map:
     mapping_csv: docs/label_harmonization.csv
     documentation: docs/label_harmonization.md
   table_i:
-    evidence_csv: evidence/locked_sources/representation/representation_ablation.csv
-  table_ii:
-    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
-    parameter_audit_csv: evidence/locked_sources/capacity/table2_shallow_params_audit.csv
+    evidence_csv: evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv
+    evidence_tex: evidence/locked_sources/structural_preservation/structural_preservation_paper_table.tex
+    full_summary_csv: evidence/locked_sources/structural_preservation/structural_preservation_summary.csv
+    sanity_json: evidence/locked_sources/structural_preservation/structural_preservation_sanity.json
+    notes: Structural preservation under matched window length and stride; retention
+      uses emittable related-flow pairs.
   deployment:
     evidence_csv: evidence/deployment/posthoc_deployment_full_benchmark_summary.csv
+  representation_ablation:
+    evidence_csv: evidence/locked_sources/representation/representation_ablation.csv
+  structural_preservation:
+    readme: evidence/locked_sources/structural_preservation/README.md
+    recipe_script: scripts/verification/compute_structural_preservation_recipe.py
+  shallow_capacity_parameter_audit:
+    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+    parameter_audit_csv: evidence/locked_sources/capacity/table2_shallow_params_audit.csv
+    notes: Shallow capacity evidence and paper-facing parameter-count audit.

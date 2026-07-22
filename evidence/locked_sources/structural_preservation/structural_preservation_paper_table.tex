@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Structural preservation under matched window length and stride
+$(k=32,s=16)$. Retention and fragmentation are computed over emittable
+related-flow pairs. Sliding denotes timestamp-based sliding windows and
+Session denotes session-coherent windows.}
+\label{tab:session_temporalization}
+\setlength{\tabcolsep}{2.0pt}
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{2}{c}{Retention $\uparrow$} &
+  \multicolumn{2}{c}{Fragmentation $\downarrow$} &
+  \multicolumn{2}{c}{Purity $\uparrow$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Dataset & Sliding & Session & Sliding & Session & Sliding & Session \\
+\midrule
+UNSW   & 0.114 & 0.756 & 0.886 & 0.244 & 0.286 & 1.000 \\
+CICIDS & 0.027 & 0.742 & 0.973 & 0.258 & 0.049 & 1.000 \\
+MQCIDS & 0.148 & 0.757 & 0.852 & 0.243 & 0.236 & 1.000 \\
+\midrule
+Avg.   & 0.096 & 0.752 & 0.904 & 0.248 & 0.190 & 1.000 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.8em}
+\end{table}
