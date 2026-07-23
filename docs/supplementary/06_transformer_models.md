@@ -11,7 +11,7 @@ model-family counts according to the evidence used by each comparison.
 | DeBERTa-v3 | Encoder | General | 183M | Encoder baseline |
 | CTI-BERT | Encoder | Domain | 110M | Security-specific encoder |
 | ModernBERT-DAPT | Encoder | Domain | 149M | Domain-adapted encoder |
-| Qwen-0.5B | Decoder | General | 494M | Decoder LLM |
+| Qwen2.5-0.5B | Decoder | General | 494M | Decoder LLM |
 
 The shallow capacity sweep spans 0.20M--3.38M trainable parameters. The strongest
 shallow operating point is `(d,L,H)=(64,4,2)` with 0.65M parameters, Macro-F1
