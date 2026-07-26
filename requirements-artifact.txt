@@ -1,0 +1,10 @@
+numpy
+pandas
+pyyaml
+torch
+scikit-learn
+matplotlib
+pillow
+
+# Optional for real LLM recipe runs; not required by the synthetic smoke test.
+transformers

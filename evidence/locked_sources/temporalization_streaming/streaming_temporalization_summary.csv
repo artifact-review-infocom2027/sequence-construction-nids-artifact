@@ -1,0 +1,5 @@
+benchmark_selection,method,n_repetitions,input_rows,emitted_windows,windows_per_input_flow,median_elapsed_sec,iqr_elapsed_sec,median_input_flows_per_sec,iqr_input_flows_per_sec,median_emitted_windows_per_sec,iqr_emitted_windows_per_sec,states_created,peak_concurrent_states,final_states,k,s
+main benchmark,global sliding,7,3164825,197800,0.0624995062918,1.38066470623,0.151407693047,2292247.33979,236301.619261,143264.327036,14768.7345398,1,1,1,32,16
+main benchmark,session-aware,7,3164825,97969,0.0309555820622,2.99178197328,0.12134654494,1057839.45096,41556.6961206,32746.0359328,1286.41171699,689766,67388,0,32,16
+complete-session robustness check,global sliding,7,2745551,171595,0.0624992943129,1.15032998938,0.0495267054066,2386750.78051,99883.6555793,149170.239483,6242.6579871,1,1,1,32,16
+complete-session robustness check,session-aware,7,2745551,71867,0.0261758022342,2.6807328565,0.178593011573,1024179.26252,65071.3308941,26808.7138282,1703.2942886,689695,67388,0,32,16

@@ -1,0 +1,48 @@
+feature,type,source,role,model_input,description
+duration,numeric,raw,model_feature,true,Flow duration in seconds.
+flow_pkts_total,numeric,derived,derived_model_feature,true,Total number of packets across both directions.
+flow_bytes_total,numeric,derived,derived_model_feature,true,Total number of bytes exchanged across both directions.
+temporal_persistence,numeric,derived,derived_model_feature,true,Time delta between repeated flows of the same communication pattern.
+burst_rate,numeric,derived,derived_model_feature,true,"Packet rate within the flow, typically computed as packets per second."
+bdr,numeric,derived,derived_model_feature,true,Byte direction ratio capturing asymmetry between forward and reverse traffic.
+port_rarity,numeric,derived,derived_model_feature,true,Inverse-frequency indicator of the destination port within the corpus.
+src_ttl,numeric,raw,model_feature,true,Time-to-live observed for packets from the source side.
+dst_ttl,numeric,raw,model_feature,true,Time-to-live observed for packets from the destination side.
+src_loss,numeric,raw,model_feature,true,Packet loss or retransmission-related indicator on the source side.
+dst_loss,numeric,raw,model_feature,true,Packet loss or retransmission-related indicator on the destination side.
+src_bps,numeric,raw,model_feature,true,Source-to-destination throughput measured in bits per second.
+dst_bps,numeric,raw,model_feature,true,Destination-to-source throughput measured in bits per second.
+src_pkts,numeric,raw,model_feature,true,Number of packets sent from source to destination.
+dst_pkts,numeric,raw,model_feature,true,Number of packets sent from destination to source.
+src_win,numeric,raw,model_feature,true,Source-side TCP window size.
+dst_win,numeric,raw,model_feature,true,Destination-side TCP window size.
+src_tcp_bytes,numeric,raw,model_feature,true,TCP payload bytes transmitted from source to destination.
+dst_tcp_bytes,numeric,raw,model_feature,true,TCP payload bytes transmitted from destination to source.
+src_pkt_mean,numeric,raw,model_feature,true,Mean packet size for packets sent by the source.
+dst_pkt_mean,numeric,raw,model_feature,true,Mean packet size for packets sent by the destination.
+tcp_trans_depth,numeric,raw,model_feature,true,Depth of the TCP transaction or exchange.
+tcp_resp_bytes,numeric,raw,model_feature,true,Number of TCP response bytes observed in the flow.
+src_jitter,numeric,raw,model_feature,true,Jitter in inter-packet arrival times on the source side.
+dst_jitter,numeric,raw,model_feature,true,Jitter in inter-packet arrival times on the destination side.
+src_intpkt,numeric,raw,model_feature,true,Source-side inter-packet timing statistic.
+dst_intpkt,numeric,raw,model_feature,true,Destination-side inter-packet timing statistic.
+tcp_rtt,numeric,raw,model_feature,true,Estimated TCP round-trip time.
+tcp_synack_time,numeric,raw,model_feature,true,Time elapsed between SYN and SYN-ACK during connection establishment.
+tcp_ack_time,numeric,raw,model_feature,true,Time elapsed before the first ACK is observed.
+count_same_state_ttl,numeric,raw,model_feature,true,Count of flows sharing similar connection state and TTL characteristics.
+count_http_methods,numeric,raw,model_feature,true,Number of distinct HTTP methods associated with the flow or local context.
+protocol,categorical,raw,model_feature,true,"Transport-layer protocol, e.g., TCP, UDP, or ICMP."
+entropy_bucket,categorical,derived,derived_model_feature,true,Discretized entropy indicator representing distributional irregularity.
+tls_ja3,categorical,raw,model_feature,true,JA3 fingerprint derived from the client TLS handshake.
+tls_ja3s,categorical,raw,model_feature,true,JA3S fingerprint derived from the server TLS handshake.
+tls_sni,categorical,raw,model_feature,true,TLS Server Name Indication value observed in the handshake.
+http_host,categorical,raw,model_feature,true,HTTP Host header value.
+http_url,categorical,raw,model_feature,true,HTTP URL path or request target.
+http_ua,categorical,raw,model_feature,true,HTTP User-Agent string.
+ssh_client_ver,categorical,raw,model_feature,true,SSH client version string or banner.
+ssh_server_ver,categorical,raw,model_feature,true,SSH server version string or banner.
+dns_name,categorical,raw,model_feature,true,Queried DNS name or domain.
+dns_type,categorical,raw,model_feature,true,"DNS record type, e.g., A, AAAA, MX, TXT."
+conn_state,categorical,raw,model_feature,true,Connection state label describing protocol/session behavior.
+app_service,categorical,raw,model_feature,true,"Inferred application-layer service, e.g., HTTP, SSH, TLS, DNS."
+symm_ips_ports,categorical,raw,temporalization_key,false,Canonicalized bidirectional communication key derived from IPs and ports.

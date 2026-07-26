@@ -1,0 +1,17 @@
+field_pattern,reason,role
+src_ip,identifier leakage,excluded_identifier
+dst_ip,identifier leakage,excluded_identifier
+source_ip,identifier leakage,excluded_identifier
+destination_ip,identifier leakage,excluded_identifier
+src_port,identifier leakage,excluded_identifier
+dst_port,identifier leakage,excluded_identifier
+source_port,identifier leakage,excluded_identifier
+destination_port,identifier leakage,excluded_identifier
+sport,identifier leakage,excluded_identifier
+dport,identifier leakage,excluded_identifier
+flow_id,identifier leakage,excluded_identifier
+uid,identifier leakage,excluded_identifier
+timestamp,ordering/temporalization control only,temporal_control
+raw_time,ordering/temporalization control only,temporal_control
+dataset_id,dataset shortcut risk,dataset_control
+split,evaluation split/control metadata,evaluation_control

@@ -1,0 +1,70 @@
+paper_claim_or_item,artifact_file,evidence_type,status,notes
+Figure 1,figures/paper/fig01_pipeline.pdf,paper figure PDF,included,paper figure
+Figure 1 preview,figures/paper/fig01_pipeline.png,PNG preview,included,preview image
+Figure 2,figures/paper/fig02_temporalization.pdf,paper figure PDF,included,paper figure
+Figure 2 preview,figures/paper/fig02_temporalization.png,PNG preview,included,preview image
+Figure 2 evidence,evidence/locked_sources/temporalization/temporalization_values.csv,evidence CSV,included,CSV evidence
+Figure 3,figures/paper/fig03_capacity_heatmap.pdf,paper figure PDF,included,paper figure
+Figure 3 preview,figures/paper/fig03_capacity_heatmap.png,PNG preview,included,preview image
+Figure 3 evidence,evidence/locked_sources/capacity/capacity_ablation_meanstd.csv,evidence CSV,included,CSV evidence
+Figure 4,figures/paper/fig04_head_ablation.pdf,paper figure PDF,included,paper figure
+Figure 4 preview,figures/paper/fig04_head_ablation.png,PNG preview,included,preview image
+Figure 4 evidence,evidence/locked_sources/head_ablation/head_ablation_meanstd.csv,evidence CSV,included,CSV evidence
+Figure 5,figures/paper/fig05_shallow_vs_llm.pdf,paper figure PDF,included,paper figure
+Figure 5 preview,figures/paper/fig05_shallow_vs_llm.png,PNG preview,included,preview image
+Figure 5 evidence,evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv,evidence CSV,included,CSV evidence
+Figure 6,figures/paper/fig06_context_efficiency.pdf,paper figure PDF,included,paper figure
+Figure 6 preview,figures/paper/fig06_context_efficiency.png,PNG preview,included,preview image
+Figure 6 evidence,evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv,evidence CSV,included,CSV evidence
+Figure 7,figures/paper/fig07_efficiency_frontier.pdf,paper figure PDF,included,paper figure
+Figure 7 preview,figures/paper/fig07_efficiency_frontier.png,PNG preview,included,preview image
+Figure 7 evidence,evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv,evidence CSV,included,CSV evidence
+Figure 8,figures/paper/fig08_per_dataset_validation.pdf,paper figure PDF,included,paper figure
+Figure 8 preview,figures/paper/fig08_per_dataset_validation.png,PNG preview,included,preview image
+Figure 8 evidence,evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv,evidence CSV,included,CSV evidence
+Supplementary context-length ablation figure,figures/supplementary/modernbert_context_ablation.pdf,supplementary figure PDF,included,supplementary ablation figure
+Supplementary context-length ablation preview,figures/supplementary/modernbert_context_ablation.png,PNG preview,included,supplementary preview image
+Supplementary context-length ablation evidence,evidence/locked_sources/context_length/modernbert_context_ablation.csv,evidence CSV,included,supplementary CSV evidence
+Supplementary pretraining ablation figure,figures/supplementary/llm_pretraining_ablation.pdf,supplementary figure PDF,included,supplementary ablation figure
+Supplementary pretraining ablation preview,figures/supplementary/llm_pretraining_ablation.png,PNG preview,included,supplementary preview image
+Supplementary pretraining ablation evidence,evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv,evidence CSV,included,supplementary CSV evidence
+Supplementary encoder-decoder comparison figure,figures/supplementary/encoder_decoder_comparison.pdf,supplementary figure PDF,included,supplementary ablation figure
+Supplementary encoder-decoder comparison preview,figures/supplementary/encoder_decoder_comparison.png,PNG preview,included,supplementary preview image
+Supplementary encoder-decoder comparison evidence,evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv,evidence CSV,included,supplementary CSV evidence
+Complete feature mapping,docs/feature_specification.csv,feature mapping CSV,included,repository file
+Complete feature mapping notes,docs/feature_specification.md,documentation,included,repository file
+Excluded identifier fields,docs/excluded_identifier_fields.csv,identifier exclusion CSV,included,repository file
+Schema harmonization rules,docs/schema_harmonization.md,documentation,included,repository file
+Label harmonization rules,docs/label_harmonization.csv,label mapping CSV,included,repository file
+Label harmonization notes,docs/label_harmonization.md,documentation,included,repository file
+Reference harmonization script,scripts/data_preparation/harmonize_schema.py,reference script,included,repository file
+Feature and label mapping verifier,scripts/data_preparation/verify_feature_and_label_mappings.py,verification script,included,repository file
+RQ1 representation ablation source,evidence/locked_sources/representation/representation_ablation.csv,evidence CSV,included,repository file
+Shallow capacity parameter audit,evidence/locked_sources/capacity/shallow_capacity_parameter_audit.csv,derived evidence CSV,included,parameter-count audit derived from locked capacity source and model metadata
+Deployment benchmark,evidence/deployment/deployment_benchmark_summary.csv,evidence CSV,included,repository file
+Source-to-canonical feature mapping,docs/source_feature_mapping.csv,feature mapping CSV,included,repository file
+Harmonization self-test output,outputs/harmonize_schema_self_test.json,verification output,included,repository file
+Harmonization source summary,outputs/harmonization_source_summary.json,verification output,included,repository file
+Supplementary appendix,docs/supplementary/README.md,supplementary documentation,included,supplementary appendix index
+Table I structural preservation,evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv,paper table CSV,included,Dataset-level structural-preservation table using emittable related-flow pairs.
+Table I structural preservation LaTeX,evidence/locked_sources/structural_preservation/structural_preservation_paper_table.tex,paper table LaTeX,included,LaTeX source for the structural-preservation table.
+Structural preservation full summary,evidence/locked_sources/structural_preservation/structural_preservation_summary.csv,full evidence CSV,included,Full structural-preservation metrics for sensitivity settings.
+Structural preservation sanity checks,evidence/locked_sources/structural_preservation/structural_preservation_sanity.json,sanity JSON,included,Sanity metadata and short-session caveat for structural-preservation diagnostics.
+Structural preservation interpretation notes,evidence/locked_sources/structural_preservation/README.md,documentation,included,Interpretation notes for the structural-preservation evidence.
+Structural preservation recipe,scripts/verification/compute_structural_preservation_recipe.py,reference calculation script,included,Input-driven recipe documenting metric computation logic using repository-relative paths.
+Table V / RQ5 cross-dataset generalization,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv,paper table CSV,included,CSV source for the RQ5 cross-dataset generalization table.
+Table V / RQ5 cross-dataset generalization LaTeX,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex,paper table LaTeX,included,Compact LaTeX source for the RQ5 table.
+RQ5 cross-dataset preserved input,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv,source CSV,included,Preserved cross-dataset input table.
+RQ5 cross-dataset interpretation notes,evidence/locked_sources/rq5_cross_dataset/README.md,documentation,included,Interpretation notes for the RQ5 cross-dataset evidence.
+Table V / RQ5 signed-rank trend diagnostics,evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json,statistics JSON,included,Exact paired signed-rank statistics for RQ5 Macro-F1 and TRG deltas.
+Section III-E matched streaming temporalization microbenchmark,evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv,evidence CSV,included,Paper-aligned aggregate comparison for matched streaming window construction.
+Section III-E matched streaming temporalization raw repetitions,evidence/locked_sources/temporalization_streaming/streaming_temporalization_raw_runs.csv,evidence CSV,included,Measured repetitions used to recompute medians and ratios.
+Section III-E matched streaming temporalization summary,evidence/locked_sources/temporalization_streaming/streaming_temporalization_summary.csv,evidence CSV,included,Median and IQR summary by method.
+Section III-E matched streaming temporalization correctness,evidence/locked_sources/temporalization_streaming/streaming_temporalization_correctness.json,correctness JSON,included,PASS/FAIL correctness summary for the benchmark.
+Section III-E matched streaming temporalization environment,evidence/locked_sources/temporalization_streaming/streaming_temporalization_environment.json,environment JSON,included,Sanitized benchmark environment summary.
+Section III-E matched streaming temporalization notes,evidence/locked_sources/temporalization_streaming/README.md,documentation,included,Benchmark method and interpretation notes.
+Section III-E matched streaming temporalization helper,scripts/verification/benchmark_temporalization_streaming.py,benchmark helper script,included,Generic script with synthetic self-test; accepts a compatible input path.
+Section III-E matched streaming temporalization verifier,scripts/verification/verify_streaming_temporalization_benchmark.py,verification script,included,Recomputes paper-aligned ranges from packaged evidence.
+Section III-E matched streaming temporalization supplement,docs/supplementary/11_streaming_temporalization_benchmark.md,supplementary documentation,included,Supplementary description of the benchmark.
+Supplementary robustness and sensitivity summary,evidence/robustness_sensitivity/robustness_sensitivity_summary.csv,supplementary evidence CSV,included,Metric-specific repeated-seed and window-size summaries.
+Supplementary robustness and sensitivity verifier,scripts/verification/verify_robustness_sensitivity.py,verification script,included,Checks summary rows against their packaged source tables.

@@ -1,0 +1,1862 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "artifact_file": "evidence/locked_sources/representation/representation_ablation.csv",
+      "exists": true,
+      "row_count": 3,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/temporalization/temporalization_values.csv",
+      "exists": true,
+      "row_count": 3,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/capacity/capacity_ablation_meanstd.csv",
+      "exists": true,
+      "row_count": 27,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/head_ablation/head_ablation_meanstd.csv",
+      "exists": true,
+      "row_count": 8,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv",
+      "exists": true,
+      "row_count": 4,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/context_length/llm_context_length_meanstd.csv",
+      "exists": true,
+      "row_count": 8,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv",
+      "exists": true,
+      "row_count": 5,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv",
+      "exists": true,
+      "row_count": 4,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "exists": true,
+      "row_count": 3,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv",
+      "exists": true,
+      "row_count": 14,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv",
+      "exists": true,
+      "row_count": 3,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "exists": true,
+      "row_count": 4,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/structural_preservation/structural_preservation_summary.csv",
+      "exists": true,
+      "row_count": 18,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "exists": true,
+      "row_count": 7,
+      "object_count": null
+    },
+    {
+      "artifact_file": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "exists": true,
+      "row_count": null,
+      "object_count": 5
+    }
+  ],
+  "verification_matrix": [
+    {
+      "paper_component": "Table I -- structural preservation",
+      "claim_evaluation": "Retention, fragmentation, purity, k=32, s=16, all three datasets, averages, and fragmentation = 1 - retention.",
+      "artifact_path": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/structural_preservation/structural_preservation_summary.csv",
+          "exists": true,
+          "row_count": 18,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/structural_preservation/structural_preservation_sanity.json",
+          "exists": true,
+          "row_count": null,
+          "object_count": 10
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Figure 2 / RQ1 -- temporalization",
+      "claim_evaluation": "Per-flow, legacy timestamp windowing, and session-coherent temporalization; Macro-F1, accuracy, and inference throughput after sequences exist.",
+      "artifact_path": "evidence/locked_sources/temporalization/temporalization_values.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/temporalization/temporalization_values.csv",
+          "exists": true,
+          "row_count": 3,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Figure 3 / RQ2 -- capacity ablation",
+      "claim_evaluation": "Architecture grid, Macro-F1, parameter counts, and throughput; capacity and parameter audit supporting Figure 3 and Table IV.",
+      "artifact_path": "evidence/locked_sources/capacity/capacity_ablation_meanstd.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/capacity/capacity_ablation_meanstd.csv",
+          "exists": true,
+          "row_count": 27,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/capacity/shallow_capacity_parameter_audit.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Figure 4 and Table III -- aggregation/head ablation",
+      "claim_evaluation": "Encoder/decoder mean, CLS, attention, last-token aggregation; Macro-F1, PR-AUC, accuracy, and throughput.",
+      "artifact_path": "evidence/locked_sources/head_ablation/head_ablation_meanstd.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/head_ablation/head_ablation_meanstd.csv",
+          "exists": true,
+          "row_count": 8,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Figure 5 and Table IV -- shallow versus pretrained transformers",
+      "claim_evaluation": "ST operating points, ModernBERT, Qwen2.5-0.5B, parameters, Macro-F1, accuracy, and throughput.",
+      "artifact_path": "evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/capacity/shallow_capacity_parameter_audit.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Figures 6 and 7 -- context and efficiency",
+      "claim_evaluation": "Shallow transformer and ModernBERT context/token-budget tradeoff; quality and inference throughput.",
+      "artifact_path": "evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv",
+          "exists": true,
+          "row_count": 14,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": "Efficiency evidence uses explicit context length, quality metric, and flows/s columns."
+    },
+    {
+      "paper_component": "Figure 8 -- per-dataset validation",
+      "claim_evaluation": "UNSW/CICIDS/MQCIDS accuracy, Macro-F1, and PR-AUC; UNSW values are 0.9872970202209838, 0.7100098635510794, and 0.7612389335355016.",
+      "artifact_path": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+          "exists": true,
+          "row_count": 3,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Table V / RQ5 -- cross-dataset generalization",
+      "claim_evaluation": "Six directed transfers and average Sliding/Session Macro-F1, delta F1, Sliding/Session TRG, and delta TRG.",
+      "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+          "exists": true,
+          "row_count": 7,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex",
+          "exists": true,
+          "row_count": null,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv",
+          "exists": true,
+          "row_count": 7,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Table V / RQ5 -- statistical trend diagnostics",
+      "claim_evaluation": "Macro-F1 W+=11, p=0.1875, rank-biserial=0.4667; TRG W+=14, p=0.28125, rank-biserial=0.3333; positive/modest and statistically inconclusive.",
+      "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+          "exists": true,
+          "row_count": null,
+          "object_count": 5
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": "Trend diagnostics are descriptive and do not encode significance-star claims."
+    },
+    {
+      "paper_component": "Section III-E -- matched streaming temporalization benchmark",
+      "claim_evaluation": "Conditioned on precomputed session identifiers; 1.02--1.06 million input flows/s, 2.17--2.33x runtime cost, 50--58% fewer windows; no end-to-end throughput claim.",
+      "artifact_path": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv",
+          "exists": true,
+          "row_count": 3,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_raw_runs.csv",
+          "exists": true,
+          "row_count": 28,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_summary.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_correctness.json",
+          "exists": true,
+          "row_count": null,
+          "object_count": 4
+        }
+      ],
+      "verifier": "scripts/verification/verify_streaming_temporalization_benchmark.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Supplementary representation ablation",
+      "claim_evaluation": "Representation-ablation source retained as supplementary evidence.",
+      "artifact_path": "evidence/locked_sources/representation/representation_ablation.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/representation/representation_ablation.csv",
+          "exists": true,
+          "row_count": 3,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_remaining_locked_sources.py",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "paper_component": "Supplementary ablations",
+      "claim_evaluation": "Context length, pretraining, encoder-decoder, robustness, and sensitivity evidence are supplementary only.",
+      "artifact_path": "evidence/locked_sources/context_length/modernbert_context_ablation.csv",
+      "evidence": [
+        {
+          "artifact_path": "evidence/locked_sources/context_length/modernbert_context_ablation.csv",
+          "exists": true,
+          "row_count": 8,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv",
+          "exists": true,
+          "row_count": 5,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv",
+          "exists": true,
+          "row_count": 4,
+          "object_count": null
+        },
+        {
+          "artifact_path": "evidence/robustness_sensitivity/robustness_sensitivity_summary.csv",
+          "exists": true,
+          "row_count": 207,
+          "object_count": null
+        }
+      ],
+      "verifier": "scripts/verification/verify_robustness_sensitivity.py",
+      "status": "PASS",
+      "notes": ""
+    }
+  ],
+  "numeric_checks": [
+    {
+      "source": "evidence/locked_sources/representation/representation_ablation.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/temporalization/temporalization_values.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/capacity/capacity_ablation_meanstd.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/head_ablation/head_ablation_meanstd.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/context_length/llm_context_length_meanstd.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_summary.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "file",
+      "metric": "exists",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "sliding_retention",
+      "actual": 0.114,
+      "expected": 0.114,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "session_retention",
+      "actual": 0.756,
+      "expected": 0.756,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "sliding_fragmentation",
+      "actual": 0.886,
+      "expected": 0.886,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "session_fragmentation",
+      "actual": 0.244,
+      "expected": 0.244,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "sliding_purity",
+      "actual": 0.286,
+      "expected": 0.286,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "k",
+      "actual": "32",
+      "expected": "32",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "stride",
+      "actual": "16",
+      "expected": "16",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "retention_type",
+      "actual": "emittable_related_pairs",
+      "expected": "emittable_related_pairs",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "sliding_fragmentation_identity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "session_fragmentation_identity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "UNSW",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "sliding_retention",
+      "actual": 0.027,
+      "expected": 0.027,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "session_retention",
+      "actual": 0.742,
+      "expected": 0.742,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "sliding_fragmentation",
+      "actual": 0.973,
+      "expected": 0.973,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "session_fragmentation",
+      "actual": 0.258,
+      "expected": 0.258,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "sliding_purity",
+      "actual": 0.049,
+      "expected": 0.049,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "k",
+      "actual": "32",
+      "expected": "32",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "stride",
+      "actual": "16",
+      "expected": "16",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "retention_type",
+      "actual": "emittable_related_pairs",
+      "expected": "emittable_related_pairs",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "sliding_fragmentation_identity",
+      "actual": 0.9999999999999999,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "session_fragmentation_identity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "CICIDS",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "sliding_retention",
+      "actual": 0.148,
+      "expected": 0.148,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "session_retention",
+      "actual": 0.757,
+      "expected": 0.757,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "sliding_fragmentation",
+      "actual": 0.852,
+      "expected": 0.852,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "session_fragmentation",
+      "actual": 0.243,
+      "expected": 0.243,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "sliding_purity",
+      "actual": 0.236,
+      "expected": 0.236,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "k",
+      "actual": "32",
+      "expected": "32",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "stride",
+      "actual": "16",
+      "expected": "16",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "retention_type",
+      "actual": "emittable_related_pairs",
+      "expected": "emittable_related_pairs",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "sliding_fragmentation_identity",
+      "actual": 0.9999999999999999,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "session_fragmentation_identity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "MQCIDS",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "sliding_retention",
+      "actual": 0.096,
+      "expected": 0.096,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_retention",
+      "actual": 0.752,
+      "expected": 0.752,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "sliding_fragmentation",
+      "actual": 0.904,
+      "expected": 0.904,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_fragmentation",
+      "actual": 0.248,
+      "expected": 0.248,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "sliding_purity",
+      "actual": 0.19,
+      "expected": 0.19,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "k",
+      "actual": "32",
+      "expected": "32",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "stride",
+      "actual": "16",
+      "expected": "16",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "retention_type",
+      "actual": "emittable_related_pairs",
+      "expected": "emittable_related_pairs",
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "sliding_fragmentation_identity",
+      "actual": 0.9999999999999999,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_fragmentation_identity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_purity",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "UNSW",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "UNSW",
+      "metric": "accuracy",
+      "actual": 0.9872970202209838,
+      "expected": 0.9872970202209838,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "UNSW",
+      "metric": "macro_f1",
+      "actual": 0.7100098635510794,
+      "expected": 0.7100098635510794,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "UNSW",
+      "metric": "pr_auc_macro",
+      "actual": 0.7612389335355016,
+      "expected": 0.7612389335355016,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "CICIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "CICIDS",
+      "metric": "accuracy",
+      "actual": 0.9960621793618601,
+      "expected": 0.9960621793618601,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "CICIDS",
+      "metric": "macro_f1",
+      "actual": 0.9216936196576652,
+      "expected": 0.9216936196576652,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "CICIDS",
+      "metric": "pr_auc_macro",
+      "actual": 0.9355024350745916,
+      "expected": 0.9355024350745916,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "MQCIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "MQCIDS",
+      "metric": "accuracy",
+      "actual": 0.9959749552772809,
+      "expected": 0.9959749552772809,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "MQCIDS",
+      "metric": "macro_f1",
+      "actual": 0.9448771616737932,
+      "expected": 0.9448771616737932,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv",
+      "item": "MQCIDS",
+      "metric": "pr_auc_macro",
+      "actual": 0.9329641383426701,
+      "expected": 0.9329641383426701,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "sliding_f1",
+      "actual": 0.42,
+      "expected": 0.42,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "session_f1",
+      "actual": 0.423,
+      "expected": 0.423,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "delta_f1",
+      "actual": 0.003,
+      "expected": 0.003,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "trg_sliding",
+      "actual": 0.199,
+      "expected": 0.199,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "trg_session",
+      "actual": 0.198,
+      "expected": 0.198,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> UNSW",
+      "metric": "delta_trg",
+      "actual": 0.001,
+      "expected": 0.001,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "sliding_f1",
+      "actual": 0.333,
+      "expected": 0.333,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "session_f1",
+      "actual": 0.333,
+      "expected": 0.333,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "delta_f1",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "trg_sliding",
+      "actual": 0.181,
+      "expected": 0.181,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "trg_session",
+      "actual": 0.161,
+      "expected": 0.161,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "CICIDS -> MQCIDS",
+      "metric": "delta_trg",
+      "actual": 0.02,
+      "expected": 0.02,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "sliding_f1",
+      "actual": 0.383,
+      "expected": 0.383,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "session_f1",
+      "actual": 0.439,
+      "expected": 0.439,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "delta_f1",
+      "actual": 0.056,
+      "expected": 0.056,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "trg_sliding",
+      "actual": 0.612,
+      "expected": 0.612,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "trg_session",
+      "actual": 0.557,
+      "expected": 0.557,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> MQCIDS",
+      "metric": "delta_trg",
+      "actual": 0.055,
+      "expected": 0.055,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "sliding_f1",
+      "actual": 0.48,
+      "expected": 0.48,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "session_f1",
+      "actual": 0.506,
+      "expected": 0.506,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "delta_f1",
+      "actual": 0.026,
+      "expected": 0.026,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "trg_sliding",
+      "actual": 0.477,
+      "expected": 0.477,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "trg_session",
+      "actual": 0.451,
+      "expected": 0.451,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "UNSW -> CICIDS",
+      "metric": "delta_trg",
+      "actual": 0.026,
+      "expected": 0.026,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "sliding_f1",
+      "actual": 0.479,
+      "expected": 0.479,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "session_f1",
+      "actual": 0.482,
+      "expected": 0.482,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "delta_f1",
+      "actual": 0.003,
+      "expected": 0.003,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "trg_sliding",
+      "actual": 0.506,
+      "expected": 0.506,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "trg_session",
+      "actual": 0.51,
+      "expected": 0.51,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> UNSW",
+      "metric": "delta_trg",
+      "actual": -0.004,
+      "expected": -0.004,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "sliding_f1",
+      "actual": 0.387,
+      "expected": 0.387,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "session_f1",
+      "actual": 0.355,
+      "expected": 0.355,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "delta_f1",
+      "actual": -0.032,
+      "expected": -0.032,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "trg_sliding",
+      "actual": 0.598,
+      "expected": 0.598,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "trg_session",
+      "actual": 0.637,
+      "expected": 0.637,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "MQCIDS -> CICIDS",
+      "metric": "delta_trg",
+      "actual": -0.039,
+      "expected": -0.039,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "row_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "sliding_f1",
+      "actual": 0.414,
+      "expected": 0.414,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "session_f1",
+      "actual": 0.423,
+      "expected": 0.423,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "delta_f1",
+      "actual": 0.009,
+      "expected": 0.009,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "trg_sliding",
+      "actual": 0.429,
+      "expected": 0.429,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "trg_session",
+      "actual": 0.419,
+      "expected": 0.419,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv",
+      "item": "Avg.",
+      "metric": "delta_trg",
+      "actual": 0.01,
+      "expected": 0.01,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "n_total",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "n_nonzero",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "zero_differences",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "w_plus",
+      "actual": 11.0,
+      "expected": 11.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "w_minus",
+      "actual": 4.0,
+      "expected": 4.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "one_sided_p_session_greater",
+      "actual": 0.1875,
+      "expected": 0.1875,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "macro_f1_delta_session_minus_sliding",
+      "metric": "rank_biserial",
+      "actual": 0.4666666666666667,
+      "expected": 0.4666666666666667,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "n_total",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "n_nonzero",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "zero_differences",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "w_plus",
+      "actual": 14.0,
+      "expected": 14.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "w_minus",
+      "actual": 7.0,
+      "expected": 7.0,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "one_sided_p_session_greater",
+      "actual": 0.28125,
+      "expected": 0.28125,
+      "status": "PASS"
+    },
+    {
+      "source": "evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json",
+      "item": "trg_delta_sliding_minus_session",
+      "metric": "rank_biserial",
+      "actual": 0.3333333333333333,
+      "expected": 0.3333333333333333,
+      "status": "PASS"
+    }
+  ],
+  "summary_consistency_checks": [
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table I -- structural preservation",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table I -- structural preservation",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 2 / RQ1 -- temporalization",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 2 / RQ1 -- temporalization",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 3 / RQ2 -- capacity ablation",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 3 / RQ2 -- capacity ablation",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 4 and Table III -- aggregation/head ablation",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 4 and Table III -- aggregation/head ablation",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 5 and Table IV -- shallow versus pretrained transformers",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 5 and Table IV -- shallow versus pretrained transformers",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figures 6 and 7 -- context and efficiency",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figures 6 and 7 -- context and efficiency",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 8 -- per-dataset validation",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 8 -- per-dataset validation",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- cross-dataset generalization",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- cross-dataset generalization",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- statistical trend diagnostics",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- statistical trend diagnostics",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Section III-E -- matched streaming temporalization benchmark",
+      "metric": "markdown_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Section III-E -- matched streaming temporalization benchmark",
+      "metric": "json_component_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table I -- structural preservation",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 2 / RQ1 -- temporalization",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 3 / RQ2 -- capacity ablation",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 4 and Table III -- aggregation/head ablation",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 5 and Table IV -- shallow versus pretrained transformers",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figures 6 and 7 -- context and efficiency",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 8 -- per-dataset validation",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- cross-dataset generalization",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5 -- statistical trend diagnostics",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Section III-E -- matched streaming temporalization benchmark",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Supplementary representation ablation",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Supplementary ablations",
+      "metric": "all_evidence_paths_exist",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figure 3 and Table IV",
+      "metric": "current_label_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5",
+      "metric": "current_label_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Section III-E",
+      "metric": "current_label_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Figures 6 and 7 -- context and efficiency",
+      "metric": "required_columns_present",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "table_i",
+      "metric": "source_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "table_v",
+      "metric": "source_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "figure_8",
+      "metric": "source_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "section_iii_e_streaming_temporalization_microbenchmark",
+      "metric": "source_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table I structural preservation",
+      "metric": "claim_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Table V / RQ5",
+      "metric": "claim_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "Section III-E matched streaming temporalization",
+      "metric": "claim_map_entry_present",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "manifest/artifact_claim_to_file_map.csv",
+      "metric": "claim_map_paths_exist",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "source": "verification_summary_alignment",
+      "item": "manifest/paper_source_map.yaml",
+      "metric": "source_map_paths_exist",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}

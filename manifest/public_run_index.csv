@@ -1,0 +1,11 @@
+public_run_id,component,model_family,representation,temporalization,window_length,stride,seed,key_hyperparameters,metadata_path
+shallow_session_text_d064_l1_h2_mean_seed0,Capacity operating point,shallow_transformer,serialized-text,session-coherent,32,16,0,d=64; L=1; H=2; pooling=mean,run_metadata/shallow_selected/shallow_session_text_d064_l1_h2_mean_seed0
+shallow_session_text_d064_l4_h2_mean_seed0,Capacity operating point,shallow_transformer,serialized-text,session-coherent,32,16,0,d=64; L=4; H=2; pooling=mean,run_metadata/shallow_selected/shallow_session_text_d064_l4_h2_mean_seed0
+shallow_session_text_d128_l1_h4_mean_seed0,Capacity operating point,shallow_transformer,serialized-text,session-coherent,32,16,0,d=128; L=1; H=4; pooling=mean,run_metadata/shallow_selected/shallow_session_text_d128_l1_h4_mean_seed0
+shallow_session_text_d256_l2_h4_mean_seed0,Head ablation baseline,shallow_transformer,serialized-text,session-coherent,32,16,0,d=256; L=2; H=4; pooling=mean,run_metadata/shallow_selected/shallow_session_text_d256_l2_h4_mean_seed0
+shallow_session_text_d256_l2_h4_attention_seed0,Head ablation attention pooling,shallow_transformer,serialized-text,session-coherent,32,16,0,d=256; L=2; H=4; pooling=attention,run_metadata/shallow_selected/shallow_session_text_d256_l2_h4_attention_seed0
+shallow_session_text_d256_l4_h8_mean_seed0,Capacity operating point,shallow_transformer,serialized-text,session-coherent,32,16,0,d=256; L=4; H=8; pooling=mean,run_metadata/shallow_selected/shallow_session_text_d256_l4_h8_mean_seed0
+llm_encoder_ctx512_seed0,LLM comparison,llm_encoder,text-window,session-coherent,32,16,0,context=512,run_metadata/llm_selected/llm_encoder_ctx512_seed0
+llm_encoder_ctx2048_seed0,LLM context length,llm_encoder,text-window,session-coherent,32,16,0,context=2048,run_metadata/llm_selected/llm_encoder_ctx2048_seed0
+llm_decoder_ctx512_seed0,LLM comparison,llm_decoder,text-window,session-coherent,32,16,0,context=512,run_metadata/llm_selected/llm_decoder_ctx512_seed0
+llm_decoder_ctx2048_seed0,LLM context length,llm_decoder,text-window,session-coherent,32,16,0,context=2048,run_metadata/llm_selected/llm_decoder_ctx2048_seed0

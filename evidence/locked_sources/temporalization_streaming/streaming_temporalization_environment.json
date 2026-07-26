@@ -1,0 +1,14 @@
+{
+  "cpu_model": "Intel(R) Xeon(R) Platinum 8468",
+  "logical_cpu_count": 64,
+  "ram_gib": 503.87,
+  "operating_system": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+  "python_version": "3.13.2",
+  "library_versions": {
+    "numpy": "2.3.1",
+    "pandas": "2.3.0",
+    "psutil": "7.0.0"
+  },
+  "benchmark_thread_policy": "Each benchmark worker sets common numerical-library thread counts to one where applicable.",
+  "anonymization_note": "No hostnames, usernames, working directories, source-control hashes, local paths, or environment variables are included."
+}

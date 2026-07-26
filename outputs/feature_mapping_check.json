@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checks": {
+    "feature_rows": 47,
+    "feature_row_count_ok": true,
+    "feature_columns_ok": true,
+    "source_feature_mapping_present": true,
+    "source_mapping_columns_ok": true,
+    "all_features_have_source_mapping": true,
+    "source_mapping_has_mqcids_rows": true,
+    "source_mapping_scope_clean": true,
+    "cicids_packet_counts_use_count_columns": true,
+    "pkt_len_mean_marked_fallback": true,
+    "mqcids_alias_rows_note_coalescing": true,
+    "excluded_identifier_fields_present": true,
+    "identifier_model_inputs": [],
+    "task_labels_present": true,
+    "label_scopes_present": true,
+    "label_scopes_clean": true,
+    "symm_ips_ports_model_input_false": true,
+    "harmonization_self_test_passed": true,
+    "self_test_duplicate_columns_absent": true,
+    "self_test_cicids_directional_pkt_mean_preferred": true,
+    "self_test_unsw_attack_cat_preferred": true,
+    "self_test_mqcids_service_coalesced": true
+  },
+  "harmonization_self_test": {
+    "status": "PASS",
+    "checks": {
+      "duplicate_columns_absent": true,
+      "cicids_directional_pkt_mean_preferred": true,
+      "cicids_packet_counts_from_counts": true,
+      "cicids_packet_counts_not_rates": true,
+      "cicids_labels_mapped": true,
+      "unsw_attack_cat_preferred": true,
+      "unsw_identifiers_dropped": true,
+      "mqcids_service_coalesced": true,
+      "mqcids_labels_mapped": true,
+      "mqcids_identifiers_dropped": true,
+      "model_columns_plus_label": true,
+      "train_fitted_port_state_stable": true,
+      "validation_values_do_not_refit_port_state": true
+    },
+    "case_rows": {
+      "cicids": 4,
+      "unsw": 3,
+      "mqcids": 2
+    },
+    "columns": 47
+  }
+}

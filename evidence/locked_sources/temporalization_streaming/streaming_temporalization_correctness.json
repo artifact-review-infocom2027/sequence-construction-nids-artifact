@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "benchmark_selections": [
+    {
+      "benchmark_selection": "main benchmark",
+      "status": "PASS"
+    },
+    {
+      "benchmark_selection": "complete-session robustness check",
+      "status": "PASS"
+    }
+  ],
+  "checks": {
+    "same_ordered_stream_for_both_methods": "PASS",
+    "all_retained_rows_processed_once": "PASS",
+    "global_window_count_formula": "PASS",
+    "session_window_count_formula": "PASS",
+    "session_windows_do_not_cross_session_boundaries": "PASS",
+    "session_window_count_not_above_global": "PASS",
+    "stable_counts_and_checks": "PASS",
+    "no_grouping_or_sorting_inside_timed_loops": "PASS",
+    "no_model_inference": "PASS"
+  },
+  "notes": [
+    "Correctness checks are PASS/FAIL summaries derived from the locked benchmark outputs.",
+    "Session identifiers and session-completion positions are assumed precomputed; session-ID derivation is outside the measurement boundary."
+  ]
+}

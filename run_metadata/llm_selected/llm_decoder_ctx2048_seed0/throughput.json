@@ -1,0 +1,12 @@
+{
+  "assumed_deploy_stride": 16,
+  "autocast": "bf16",
+  "backbone_measured": "Qwen/Qwen2.5-0.5B",
+  "backbone_params": 494032768,
+  "batch_size": 8,
+  "device": "cuda",
+  "flows_per_sec": 1001.6591215516142,
+  "latency_ms_per_batch": 127.78798420137416,
+  "max_len": 2048,
+  "windows_per_sec": 62.60369509697589
+}

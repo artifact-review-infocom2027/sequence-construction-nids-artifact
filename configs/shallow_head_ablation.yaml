@@ -1,0 +1,33 @@
+task:
+  family: shallow_serialized_text
+  scenario: shallow pooling/head ablation for Table III and Figure 4
+requires_raw_data_not_included: true
+seed: 0
+paths:
+  train: "<DATA_NOT_INCLUDED>/train_windows"
+  val: "<DATA_NOT_INCLUDED>/val_windows"
+  test: "<DATA_NOT_INCLUDED>/test_windows"
+  output_dir: outputs/shallow_head_ablation
+representation:
+  name: serialized_text
+temporalization:
+  name: session_coherent
+window:
+  window_len: 32
+  stride: 16
+model:
+  d_model: 256
+  layers: 2
+  heads: 4
+  ff_dim: 1024
+  max_tokens: 512
+pool_choices: [mean, cls, attn, last]
+encoder_decoder_mode:
+  status: encoder_style
+optimizer:
+  epochs: 20
+  batch_size: 256
+  lr: 0.001
+metrics:
+  primary: macro_f1
+report_to: none

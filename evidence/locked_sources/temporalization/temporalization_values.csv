@@ -1,0 +1,4 @@
+public_result_id,label,source_temporalization,config_key,macro_f1,accuracy,windows_per_sec,window_len,stride,throughput_flows_per_sec,throughput_rule
+temporalization_per_flow,Per-flow,no_window,"(128, 4, 4)",0.5533037239,0.800859446,,,,156850.6595,flows_per_sec direct
+temporalization_legacy_window,Legacy,legacy_window,"(128, 4, 4)",0.3225975534,0.8993999958,33914.86767,32,,1085275.765,processed_flow_records_per_sec = windows_per_sec * window_len
+temporalization_session_coherent,Session-coherent,session_coherent_window,"(128, 4, 4)",0.7091839844,0.81025,37315.00237,32,16,1194080.076,processed_flow_records_per_sec = windows_per_sec * window_len

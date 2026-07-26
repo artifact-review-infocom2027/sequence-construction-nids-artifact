@@ -1,0 +1,23 @@
+{
+  "description": "Exact paired signed-rank trend diagnostics for RQ5 cross-dataset transfer; no star notation is used.",
+  "zero_difference_convention": "Zero differences are excluded from the signed-rank statistic and reported separately.",
+  "macro_f1_delta_session_minus_sliding": {
+    "n_total": 6,
+    "n_nonzero": 5,
+    "zero_differences": 1,
+    "w_plus": 11.0,
+    "w_minus": 4.0,
+    "one_sided_p_session_greater": 0.1875,
+    "rank_biserial": 0.4666666666666667
+  },
+  "trg_delta_sliding_minus_session": {
+    "n_total": 6,
+    "n_nonzero": 6,
+    "zero_differences": 0,
+    "w_plus": 14.0,
+    "w_minus": 7.0,
+    "one_sided_p_session_greater": 0.28125,
+    "rank_biserial": 0.3333333333333333
+  },
+  "interpretation": "Positive/modest average trends are statistically inconclusive under these exact one-sided diagnostics; no broad improvement claim is made."
+}

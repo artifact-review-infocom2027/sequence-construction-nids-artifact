@@ -1,0 +1,4 @@
+benchmark_selection,global_median_input_flows_per_sec,session_median_input_flows_per_sec,session_global_runtime_ratio,session_global_throughput_ratio,global_windows,session_windows,window_reduction_percent,global_windows_per_flow,session_windows_per_flow,additional_session_rss_mib,k,s,interpretation
+main benchmark,2292247.33979,1057839.45096,2.16691421152,0.461485736113,197800,97969,50.470677452,0.0624995062918,0.0309555820622,46.421875,32,16,measurable but operationally feasible overhead
+complete-session robustness check,2386750.78051,1024179.26252,2.33040334621,0.429110266094,171595,71867,58.1182435386,0.0624992943129,0.0261758022342,45.9921875,32,16,measurable but operationally feasible overhead
+average,2339499.06015,1041009.35674,2.24865877886,0.445298001103,184697.5,84918,54.2944604953,0.0624994003024,0.0285656921482,46.20703125,32,16,arithmetic mean across the main benchmark and complete-session robustness check

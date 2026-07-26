@@ -1,0 +1,103 @@
+paper_source_map:
+  figure_1:
+    paper_pdf: figures/paper/fig01_pipeline.pdf
+    preview_png: figures/paper/fig01_pipeline.png
+  figure_2:
+    paper_pdf: figures/paper/fig02_temporalization.pdf
+    preview_png: figures/paper/fig02_temporalization.png
+    evidence_csv: evidence/locked_sources/temporalization/temporalization_values.csv
+  figure_3:
+    paper_pdf: figures/paper/fig03_capacity_heatmap.pdf
+    preview_png: figures/paper/fig03_capacity_heatmap.png
+    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+  figure_4:
+    paper_pdf: figures/paper/fig04_head_ablation.pdf
+    preview_png: figures/paper/fig04_head_ablation.png
+    evidence_csv: evidence/locked_sources/head_ablation/head_ablation_meanstd.csv
+  figure_5:
+    paper_pdf: figures/paper/fig05_shallow_vs_llm.pdf
+    preview_png: figures/paper/fig05_shallow_vs_llm.png
+    evidence_csv: evidence/locked_sources/llm_comparison/shallow_vs_llm_comparison.csv
+  figure_6:
+    paper_pdf: figures/paper/fig06_context_efficiency.pdf
+    preview_png: figures/paper/fig06_context_efficiency.png
+    evidence_csv: evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv
+  figure_7:
+    paper_pdf: figures/paper/fig07_efficiency_frontier.pdf
+    preview_png: figures/paper/fig07_efficiency_frontier.png
+    evidence_csv: evidence/locked_sources/efficiency/efficiency_context_tradeoff.csv
+  figure_8:
+    paper_pdf: figures/paper/fig08_per_dataset_validation.pdf
+    preview_png: figures/paper/fig08_per_dataset_validation.png
+    evidence_csv: evidence/locked_sources/per_dataset_validation/per_dataset_validation.csv
+  feature_mapping:
+    specification_csv: docs/feature_specification.csv
+    specification_md: docs/feature_specification.md
+    source_mapping_csv: docs/source_feature_mapping.csv
+    excluded_fields_csv: docs/excluded_identifier_fields.csv
+  schema_harmonization:
+    documentation: docs/schema_harmonization.md
+    reference_script: scripts/data_preparation/harmonize_schema.py
+    self_test_output: outputs/harmonize_schema_self_test.json
+    source_summary: outputs/harmonization_source_summary.json
+  label_harmonization:
+    mapping_csv: docs/label_harmonization.csv
+    documentation: docs/label_harmonization.md
+  table_i:
+    evidence_csv: evidence/locked_sources/structural_preservation/structural_preservation_paper_table.csv
+    evidence_tex: evidence/locked_sources/structural_preservation/structural_preservation_paper_table.tex
+    full_summary_csv: evidence/locked_sources/structural_preservation/structural_preservation_summary.csv
+    sanity_json: evidence/locked_sources/structural_preservation/structural_preservation_sanity.json
+    notes: Structural preservation under matched window length and stride; retention uses emittable related-flow
+      pairs.
+  deployment:
+    evidence_csv: evidence/deployment/deployment_benchmark_summary.csv
+  representation_ablation:
+    evidence_csv: evidence/locked_sources/representation/representation_ablation.csv
+  structural_preservation:
+    readme: evidence/locked_sources/structural_preservation/README.md
+    recipe_script: scripts/verification/compute_structural_preservation_recipe.py
+  shallow_capacity_parameter_audit:
+    evidence_csv: evidence/locked_sources/capacity/capacity_ablation_meanstd.csv
+    parameter_audit_csv: evidence/locked_sources/capacity/shallow_capacity_parameter_audit.csv
+    notes: Shallow capacity evidence and parameter-count audit.
+  rq5_cross_dataset_generalization:
+    paper_table_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv
+    paper_table_tex: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex
+    raw_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv
+    readme: evidence/locked_sources/rq5_cross_dataset/README.md
+    statistics_json: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json
+  section_iii_e_streaming_temporalization_microbenchmark:
+    comparison_csv: evidence/locked_sources/temporalization_streaming/streaming_temporalization_comparison.csv
+    raw_runs_csv: evidence/locked_sources/temporalization_streaming/streaming_temporalization_raw_runs.csv
+    summary_csv: evidence/locked_sources/temporalization_streaming/streaming_temporalization_summary.csv
+    correctness_json: evidence/locked_sources/temporalization_streaming/streaming_temporalization_correctness.json
+    environment_json: evidence/locked_sources/temporalization_streaming/streaming_temporalization_environment.json
+    readme: evidence/locked_sources/temporalization_streaming/README.md
+    benchmark_script: scripts/verification/benchmark_temporalization_streaming.py
+    verification_script: scripts/verification/verify_streaming_temporalization_benchmark.py
+    supplementary_note: docs/supplementary/11_streaming_temporalization_benchmark.md
+    notes: Matched streaming window construction conditioned on precomputed session identifiers; session-ID
+      derivation is outside the benchmark.
+  supplementary_ablations:
+    context_length_figure_pdf: figures/supplementary/modernbert_context_ablation.pdf
+    context_length_preview_png: figures/supplementary/modernbert_context_ablation.png
+    context_length_evidence_csv: evidence/locked_sources/context_length/modernbert_context_ablation.csv
+    pretraining_figure_pdf: figures/supplementary/llm_pretraining_ablation.pdf
+    pretraining_preview_png: figures/supplementary/llm_pretraining_ablation.png
+    pretraining_evidence_csv: evidence/locked_sources/llm_comparison/llm_pretraining_meanstd.csv
+    encoder_decoder_figure_pdf: figures/supplementary/encoder_decoder_comparison.pdf
+    encoder_decoder_preview_png: figures/supplementary/encoder_decoder_comparison.png
+    encoder_decoder_evidence_csv: evidence/locked_sources/llm_comparison/encoder_decoder_comparison.csv
+    robustness_sensitivity_csv: evidence/robustness_sensitivity/robustness_sensitivity_summary.csv
+    robustness_sensitivity_verifier: scripts/verification/verify_robustness_sensitivity.py
+    notes: Supplementary ablation assets retained for additional analysis; the current paper has Figures
+      1--8.
+  table_v:
+    evidence_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.csv
+    evidence_tex: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_paper_table.tex
+    raw_csv: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_raw.csv
+    readme: evidence/locked_sources/rq5_cross_dataset/README.md
+    notes: RQ5 cross-dataset generalization table; transfer is evaluated without fine-tuning; statistical
+      trend evidence is packaged separately.
+    statistics_json: evidence/locked_sources/rq5_cross_dataset/rq5_cross_dataset_statistics.json

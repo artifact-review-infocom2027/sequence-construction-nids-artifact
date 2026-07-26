@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "sources_used": [
+    "docs/feature_specification.csv",
+    "docs/source_feature_mapping.csv",
+    "docs/label_harmonization.csv",
+    "docs/excluded_identifier_fields.csv",
+    "scripts/data_preparation/harmonize_schema.py"
+  ],
+  "source_feature_mapping_rows": 81,
+  "feature_rows": 47,
+  "label_rule_rows": 27,
+  "notes": [
+    "All listed sources are included in this repository.",
+    "The reference recipe accepts compatible tabular inputs."
+  ]
+}

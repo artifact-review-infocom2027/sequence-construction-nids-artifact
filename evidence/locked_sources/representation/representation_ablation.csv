@@ -1,0 +1,4 @@
+Representation,Test Macro-F1,Test Accuracy
+Per-flow,0.761,0.895
+Structured field-token,0.580,0.802
+Serialized text,0.562,0.806

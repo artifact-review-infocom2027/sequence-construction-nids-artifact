@@ -1,0 +1,15 @@
+check,command,status,details
+Feature and label mappings,python scripts/data_preparation/verify_feature_and_label_mappings.py,PASS,47 documented fields; identifier exclusions and label mappings verified
+Harmonization and leakage self-test,python scripts/data_preparation/harmonize_schema.py --self-test,PASS,13 checks; training-fitted port state is unchanged by validation rows
+Locked evidence and paper maps,python scripts/verification/verify_remaining_locked_sources.py,PASS,15 files; 12 verification records; 142 numeric checks; 45 consistency checks
+Streaming temporalization evidence,python scripts/verification/verify_streaming_temporalization_benchmark.py,PASS,individual selections and arithmetic mean verified
+Robustness and sensitivity evidence,python scripts/verification/verify_robustness_sensitivity.py,PASS,207 rows; 184 rows checked against packaged source tables
+Streaming implementation self-test,python scripts/verification/benchmark_temporalization_streaming.py --self-test,PASS,"window counts, state cleanup, and boundary checks passed"
+Training-interface smoke test,python scripts/smoke_test_training_interface.py,PASS,"configuration, forward/backward, serialization, metrics, and window checks passed"
+Shallow configuration dry run,python scripts/train.py --config configs/shallow_session.yaml --dry-run,PASS,configuration validated without loading external assets
+ModernBERT configuration dry run,python scripts/train.py --config configs/llm_modernbert_512.yaml --dry-run,PASS,configuration validated without loading external assets
+Qwen2.5 configuration dry run,python scripts/train.py --config configs/llm_qwen_512.yaml --dry-run,PASS,configuration validated without loading external assets
+Window-construction dry run,python scripts/build_windows.py --config configs/build_windows_session.yaml --dry-run,PASS,window recipe validated without loading an input table
+Deployment summary loader,python scripts/deployment_benchmark/benchmark_inference_deployment.py,PASS,7 packaged benchmark rows loaded
+Python syntax check,AST parse of every packaged Python file,PASS,21 Python files parsed successfully
+Manifest and checksum integrity,python scripts/verification/verify_manifest_integrity.py,PASS,172 files; 172 manifest entries; 171 checksum entries
